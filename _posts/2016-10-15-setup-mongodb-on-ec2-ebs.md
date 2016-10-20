@@ -32,6 +32,7 @@ You can deploy MongoDB across machines. Also on each EC2 you can do RAID-x for y
 
 Please be noted that the default EC2 stroage is ephemeral, which is saying that if you accidentally shuts down your instance or the instance crashes for some reason, the changes you made to your machine would be damaged or wiped out. Which is definitely not something you want to do when you're hosting your database. 
 
+Don't use `sudo` to run your MongoDb process. 
 
 --
 
