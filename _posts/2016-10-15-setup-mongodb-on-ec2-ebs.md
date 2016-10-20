@@ -21,7 +21,8 @@ Actually there are lots of articles explaining how you can do this. I would only
 * Initialize your EC2 
 * Create an extra EBS volume 
 * Mount those volumes and create a filesystem there. 
-* Configure your MongoDB and EC2 so that your MongoDB can accept requests from outside.
+* Configure your MongoDB authentication and user roles 
+* Configure your EC2 so that your MongoDB can accept requests from outside.
 
 ### Advanced settings
 
@@ -29,7 +30,7 @@ You can deploy MongoDB across machines. Also on each EC2 you can do RAID-x for y
 
 ### Miscellaneous
 
-Please be noted that the default EC2 stroage is ephemeral, which is saying that if you accidentally shuts down your instance or the instance crashes for some reason, the changes you made to your machine would be damaged or wiped out. Which is definitely not something you want to do when you're hosting your database there. 
+Please be noted that the default EC2 stroage is ephemeral, which is saying that if you accidentally shuts down your instance or the instance crashes for some reason, the changes you made to your machine would be damaged or wiped out. Which is definitely not something you want to do when you're hosting your database. 
 
 
 --
