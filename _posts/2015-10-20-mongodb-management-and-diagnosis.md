@@ -53,9 +53,9 @@ But also you would want to create users in your other collections, just do:
 use xxxx
 db.createUser(
   {
-    user: “myotherdbuser”,
-    pwd: “KeepASecret”,
-    roles: [“readWrite”,”dbAdmin”]
+    user: "myotherdbuser",
+    pwd: "KeepASecret",
+    roles: ["readWrite","dbAdmin"]
   }
 )
 ```
