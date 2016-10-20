@@ -39,5 +39,6 @@ Don't use `sudo` to run your MongoDB process. Actually you should never run your
 references:
 
 * [https://docs.mongodb.com/ecosystem/platforms/amazon-ec2/](https://docs.mongodb.com/ecosystem/platforms/amazon-ec2/)
+* [https://mongodb-documentation.readthedocs.io/en/latest/ecosystem/tutorial/install-mongodb-on-amazon-ec2.html](https://mongodb-documentation.readthedocs.io/en/latest/ecosystem/tutorial/install-mongodb-on-amazon-ec2.html)
 
 {{ page.date | date_to_string }}
