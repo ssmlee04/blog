@@ -1,0 +1,4 @@
+baseurl: /blog
+markdown: kramdown
+highlighter: rouge
+
