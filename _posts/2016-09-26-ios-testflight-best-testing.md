@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: iOS apps TestFlight Beta Testing
 ---
 # {{ page.title }}

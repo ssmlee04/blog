@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some common things I do with Bluebird promises
 ---
 ## {{ page.title }}

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Introduction to React Native (for iOS)
 
 ---

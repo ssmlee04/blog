@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some useful git commands and configurations
 ---
 ## {{ page.title }}

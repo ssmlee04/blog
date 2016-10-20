@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: 3rd party payment system integration
 
 ---

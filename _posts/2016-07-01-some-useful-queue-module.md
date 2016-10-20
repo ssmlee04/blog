@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some useful queue modules in node.js
 ---
 # {{ page.title }}

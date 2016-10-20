@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some new features in Xcode 8 worth looking into
 ---
 # {{ page.title }}

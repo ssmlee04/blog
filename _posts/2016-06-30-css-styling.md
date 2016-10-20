@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: CSS styling with bootstrap and flexbox
 ---
 # {{ page.title }}

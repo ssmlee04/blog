@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Books I read lately
 ---
 ## {{ page.title }}

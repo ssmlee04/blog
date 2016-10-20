@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Transfer a Godaddy domain name
 ---
 # {{ page.title }}

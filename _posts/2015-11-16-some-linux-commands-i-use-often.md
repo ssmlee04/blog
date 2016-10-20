@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some linux commands that I use often
 ---
 ## {{ page.title }}

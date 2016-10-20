@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: mongodb management and diagnosis
 ---
 ## {{ page.title }}

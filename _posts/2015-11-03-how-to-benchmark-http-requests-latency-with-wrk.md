@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: How to benchmark http request latencies
 ---
 ## {{ page.title }}

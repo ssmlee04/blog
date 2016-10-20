@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Separate a mean.io project to separate frontend and backend structure
 ---
 ## {{ page.title }}

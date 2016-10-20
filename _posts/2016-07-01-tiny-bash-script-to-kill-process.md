@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Tiny bash script to kill a process by name
 ---
 # {{ page.title }}

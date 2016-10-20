@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some useful Sublime Text configurations and usages
 ---
 ## {{ page.title }}

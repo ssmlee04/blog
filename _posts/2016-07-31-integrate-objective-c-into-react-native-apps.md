@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Integrate Objective-C apps into your React native apps
 
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some useful Google Chrome commands
 ---
 # {{ page.title }}

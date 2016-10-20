@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Backend comparison between express.js, hapi.js, parse.com
 ---
 ## {{ page.title }}

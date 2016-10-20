@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Things to note on Mysql transactions
 ---
 # {{ page.title }}

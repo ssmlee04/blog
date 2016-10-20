@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: How to structure an nodejs + expressjs app
 ---
 # {{ page.title }}

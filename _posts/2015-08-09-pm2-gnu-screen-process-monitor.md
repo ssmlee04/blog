@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Use pm2 and GNU screen to monitor processes in one session
 ---
 ## {{ page.title }}

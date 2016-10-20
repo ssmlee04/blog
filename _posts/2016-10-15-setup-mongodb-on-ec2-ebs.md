@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Setup Mongodb on EC2 with EBS
 ---
 # {{ page.title }}

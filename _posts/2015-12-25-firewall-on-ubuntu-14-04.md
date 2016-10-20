@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Firewall on ubuntu 14.04
 ---
 # {{ page.title }}

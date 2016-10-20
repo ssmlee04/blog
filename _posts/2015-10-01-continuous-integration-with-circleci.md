@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Continuous integration with CircleCI
 ---
 ## {{ page.title }}

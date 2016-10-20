@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: SSL vulnerabilities
 ---
 # {{ page.title }}

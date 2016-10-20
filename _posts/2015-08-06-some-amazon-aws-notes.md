@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Some Amazon AWS memos
 ---
 

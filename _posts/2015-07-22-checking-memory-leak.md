@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 title: Checking memory leaks in node.js applications
 ---
 ## {{ page.title }}
