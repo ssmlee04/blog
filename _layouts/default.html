@@ -1,1 +1,19 @@
 {{ content }}
+
+<section>
+  <p> Latest Article</p>
+  <ul>
+  　　{% for post in site.posts %}
+  　　　　<li>{{ post.date | date_to_string }}
+          <a href="{{ post.url }}">{{ post.title }}
+          </a>
+          {% if post.image %}
+          <br />
+          <a href="{{ post.url }}">
+            <img src="{{ post.image }}" />
+          </a>
+          {% endif %}
+        </li>　　　　
+      {% endfor %}
+  </ul>
+</section>
