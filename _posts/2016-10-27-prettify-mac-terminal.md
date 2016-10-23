@@ -46,13 +46,15 @@ This displays the machine name (%m) and the trailing component of the current pa
 
 Other default settings that I use
 
-For ~/.bash_profile
+* For ~/.bash_profile
 
 ```
 zsh
 ```
 
-For ~/.zshrc
+Use zsh shell instead of default bash shell
+
+* For ~/.zshrc
 
 ```
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -65,7 +67,9 @@ export LSCOLORS=GxFxCxDxBxegedabagaced
 source ~/.bashrc
 ```
 
-For ~/.bashrc
+zsh-autosuggestions is an utility that suggests commands as you type, based on the command history.
+
+* For ~/.bashrc
 
 ```
 # load nvm

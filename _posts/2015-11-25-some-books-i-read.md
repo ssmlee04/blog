@@ -26,7 +26,7 @@ Turns out this guy graduates from Duke and is much more than just a 21 gambler..
 
 * What if (2015)
 
-Worthwhile reading
+The author ask a series of (weird) questions and try to come up a solution using physics, which is reall cool.
 
 ### <font color='red'>Management & Startups</font>
 
