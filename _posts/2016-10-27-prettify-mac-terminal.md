@@ -42,6 +42,49 @@ export PS1='%m %1d$ '
 This displays the machine name (%m) and the trailing component of the current path (%1d). 
 
 
+### Misc
+
+Other default settings that I use
+
+For ~/.bash_profile
+
+```
+zsh
+if [ -f ~/.zshrc ]; then
+   source ~/.zshrc
+fi
+```
+
+For ~/.zshrc
+
+```
+source ~/.bashrc
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Prettify your zsh shell
+export PS1='%m %1d$ '
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+```
+
+For ~/.bashrc
+
+```
+# load nvm
+if [ -s ~/.nvm/nvm.sh ]; then
+        NVM_DIR=~/.nvm
+        source ~/.nvm/nvm.sh
+fi
+
+# git tab completion (homebrew)
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+    . `brew --prefix`/etc/bash_completion.d/git-completion.bash
+fi
+
+# load avn
+[[ -s "$HOME/.avn/bin/avn.sh" ]] && source "$HOME/.avn/bin/avn.sh" # load avn
+```
 
 --
 
