@@ -65,6 +65,28 @@ tail -f /proc/1234/fd/1
 ```
 Check the outputs of a running process with pid `1234` (not working on a mac)
 
+`⌘ + D`
+
+Split the window 
+
+`Shift + ⌘ + D`
+
+Undo split the window
+
+
+```
+ls -l 
+```
+
+Check file and folder owners. 
+
+```
+ll
+```
+
+Check file and folder owners, even the hidden files. 
+
+
 ### utilities that I use
 
 * ncdu (use this to check disk space and usage)
@@ -74,6 +96,8 @@ Check the outputs of a running process with pid `1234` (not working on a mac)
 * screen (use this to open multiple screens and run processes in them)
 
 ![](http://i.stack.imgur.com/ciJfb.png)
+
+
 
 --
 
