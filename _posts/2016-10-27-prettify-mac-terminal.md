@@ -37,7 +37,7 @@ This displays the machine name (%m) and the trailing component of the current pa
 
 * zsh-autosuggestions
 
-This is a smart utility that records your historical commands so as to predict what you are going to do in your future commands. You can press -> key to autocomplete the commands. 
+This is a smart utility that records your historical commands so as to predict what you are going to do in your future commands. You can press → key to autocomplete the commands. 
 
 ![](https://i.stack.imgur.com/cm4wR.png)
 
