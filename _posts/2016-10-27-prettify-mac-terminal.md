@@ -75,6 +75,10 @@ if [ -s ~/.nvm/nvm.sh ]; then
         source ~/.nvm/nvm.sh
 fi
 
+# load nvm on a mac
+export NVM_DIR="/Users/username/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
 # git tab completion (homebrew)
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
     . `brew --prefix`/etc/bash_completion.d/git-completion.bash
