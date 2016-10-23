@@ -50,22 +50,19 @@ For ~/.bash_profile
 
 ```
 zsh
-if [ -f ~/.zshrc ]; then
-   source ~/.zshrc
-fi
 ```
 
 For ~/.zshrc
 
 ```
-source ~/.bashrc
-
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Prettify your zsh shell
 export PS1='%m %1d$ '
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
+
+source ~/.bashrc
 ```
 
 For ~/.bashrc
