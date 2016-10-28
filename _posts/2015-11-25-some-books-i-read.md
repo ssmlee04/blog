@@ -22,6 +22,10 @@ Know most of the stuff in there already..
 
 Turns out this guy graduates from Duke and is much more than just a 21 gambler..
 
+* Unbroken: A world war II story of survival, resilience, and redemption (2016)
+
+The books is story about an Olympic runner who went into world war II, spend 46 days adrift in the sea, ended up in a Japanese prisoner of war camp and came back to his home country years later. 
+
 ### <font color='red'>Science</font>
 
 * What if (2015)
