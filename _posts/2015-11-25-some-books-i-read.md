@@ -24,15 +24,20 @@ Turns out this guy graduates from Duke and is much more than just a 21 gambler..
 
 * Unbroken: A world war II story of survival, resilience, and redemption (2016)
 
-The books is story about an Olympic runner who joined world war II, went through a plane crash and spend so many days adrift in the sea, ended up in a Japanese prisoner of war camp and came back to his home country years later when the war ends. 
+The books is story about an Olympic runner who joined world war II, went through a plane crash and spend so many days adrift in the sea, ended up in a Japanese prisoner of war camp.
 
-The Olympic runner is called Louis Zamperini, he is among the fastest runners in 1936 Berlin Olympic track event. He is running so fast that he even received the attention from Hilter.  And he is a medal hopeful for 1940 Olympics. However, the 1940 game is called off due to the wars and Louie is commissions into the US Air Force as a Lieutenant. 
+The Olympic runner is called Louis Zamperini, he is among the fastest runners in 1936 Berlin Olympic track event. He is running so fast that he even received the attention from Hilter. And he is a medal hopeful for 1940 Olympics. However, the 1940 game is called off due to the outbreak of wars and Louie is commissions into the US Air Force as a Lieutenant. 
 
-Later on a search rescue mission his plane went down in the pacific. Only 3 people survived the crash and spend so many days adrift on the sea without and food and water. Their food and water is contingent on the occasional rain showers and the unfortunate fly-by birds that rests on his heads. 46 days later they ended up this part journey on Marshall Islands, which is a Japanese controller island and they are immediately captured by the Japanese and put into a POW camp. 
+Later on a search rescue mission his plane went down in the pacific. 3 people survived the crash but eventually only 2 people made it through the sea. They spend 47 days on the sea without food and water. Their survival is contingent on the occasional rain showers and the fly-by birds that rests on their rafts. 46 days later they ended up in Japanese-controller Marshall Islands and they are immediately captured by the Japanese and taken into a POW camp. 
 
-He spend a few years in a POW camp in Japan being tormented physically and psychologically by a group of Japanese POW camp officers. He was beaten and starved especially hard partly because he's an prominent Olympian runner. He had severe health conditions and is constantly under fever and famine and survived only because his colleagues would provide him occasional rice or sugar they steal from somewhere. In his reminder he say if he knew what he had to go through in the follow years he would kill himself. 
+He spend a few years in a POW camp in Japan being tormented physically and psychologically by the Japanese officers. He was beaten and starved especially hard partly because he's an prominent Olympian runner. Beating him means something for the Japanese soldiers. He had severe health conditions and is constantly under fever and famine and survived only because his colleagues would provide him occasional rice or sugar they steal from somewhere. In his reminder he say if he knew what he had to go through in the follow years he would kill himself. 
 
-When the war ends he returned to the US to meet with his families. 
+When the war ends he returned to the US to meet with his families. Soon after that he married a girl and is seeking to get over the past and regain control of his life. However, the days in capture haunted him badly. 
+
+He tried to run again, but years of torment have degenerated his body conditions to a level that he can never run again. He often woke up and screaming at night, one time he even strangles his wife shouting the names of his tormentors while they're asleep. He was so despondent that he developed a drinking problem. And, as a result, they went through a tough marriage. 
+
+Later he turned to god for help. He realized what he went though is, instead of misfortune, indeed miracle. Great story telling about how one person can change through the years.
+
 
 ### <font color='red'>Science</font>
 
