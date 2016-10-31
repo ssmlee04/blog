@@ -24,7 +24,13 @@ Turns out this guy graduates from Duke and is much more than just a 21 gambler..
 
 * Unbroken: A world war II story of survival, resilience, and redemption (2016)
 
-The books is story about an Olympic runner who went into world war II, spend 46 days adrift in the sea, ended up in a Japanese prisoner of war camp and came back to his home country years later. 
+The books is story about an Olympic runner who joined world war II, went through a plane crash and spend so many days adrift in the sea, ended up in a Japanese prisoner of war camp and came back to his home country years later when the war ends. 
+
+The Olympic runner is called Louis Zamperini, he is among the fastest runners in 1936 Berlin Olympic track event. He is running so fast that he even received the attention from Hilter.  And he is a medal hopeful for 1940 Olympics. However, the 1940 game is called off due to the wars and Louie is commissions into the US Air Force as a Lieutenant. 
+
+Later on a search rescue mission his plane went down in the pacific. Only 3 people survived the crash and spend so many days adrift on the sea without and food and water. Their food and water is contingent on the occasional rain showers and the unfortunate fly-by birds that rests on his heads. 46 days later they ended up this part journey on Marshall Islands, which is a Japanese controller island and they are immediately captured by the Japanese and put into a POW camp. 
+
+He spend a few years in a POW camp in Japan being tormented physically and psychologically by a group of Japanese POW camp officers. He was beaten and starved especially hard partly because he's an prominent Olympics runner, in his reminder he say if he knew what he had to go through in the follow years he would kill himself. 
 
 ### <font color='red'>Science</font>
 
