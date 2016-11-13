@@ -1,18 +1,20 @@
 ---
 layout: article
-title: Books I read lately
+title: Books I've read lately
 ---
 ## {{ page.title }}
 
-### <font color='red'>history, economy, philosophy</font>
+### <font color='red'>history, economics, philosophy</font>
 
 * 香港企業併購經典 (r2015)
 
-it's a book on M&A cases in Hongkong during 1960s-1980s.  You see how big corporations success and fail by making decisions under different circumstances.  Food for thought.
+It's a book about some successful merger and acquisition cases in Hongkong during 1960-1980s. You see how big corporations success and fail by making decisions under different circumstances. Food for thought.
 
 * 夢遊者 1914 - 歐洲如何邁向戰爭之路 (r2015)
 
-It's a great book I'd recommend anyone who's interested in world politics.  I also find it ridiculous that human repeat their mistakes and go into wars again and again.
+It's a great book I'd recommend anyone who's interested in world politics. It walks you through the cause of WWI from the perspective of each different countries. We can see that everyone is certain that they have to take part in the big game to achieve some goals, and then the war were spinning out of control. 
+
+It's amazing how human repeat their mistakes and go into wars again and again and cannot learn from the past, no matter where you are from.
 
 * 野心時代 (r2015)
 
