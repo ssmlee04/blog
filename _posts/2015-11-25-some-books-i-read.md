@@ -42,7 +42,7 @@ Later he turned to god for help. He realized what he went though is, instead of 
 
 * Endurance: Shackleton's Incredible Voyage - by Alfred Lansing
 
-I don't really like this book. It's a book about a group of people stuck on the ice around the Antarctica for a few years and strive to find a way back to civilization. 
+It's a book about a group of people stuck on the ice around the Antarctica for a few years and strive to find their way back to civilization. They rely on occasional food sources on the ice and sometimes spend a few days rowing in the sea, nonstop, in order to find themselves bigger and more secure floes to stay. I don't really like this book. It's basically telling the same thing after chapter 2..
 
 ### <font color='red'>Science</font>
 
