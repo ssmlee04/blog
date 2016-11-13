@@ -40,6 +40,12 @@ Later he turned to god for help. He realized what he went though is, instead of 
 
 * Wallenberg: The Incredible True Story of the Man Who Saved the Jews of Budapest - by Kati Marton (r2015)
 
+Raoul Wallenberg is a Swedish diplomat who saves tens of thousand of Jews' lives during the Holocaust from the Nazis in the later stages of WWII. He issued protective passports for whoever that are under persecution by the Nazis and provided shelters for them. Sometimes he even went to negotiate to the high level Nazi officers and handpick the Jews away from the death march. 
+
+After WWII he is even hopeful about further helping the Hungarians to rebuild their community from ground up. But as the end of WWII immediately brings about the cold war the Russian are also trying to interfere with the post-war politics in Hungary. Thus Wallenberg has become a nuisance for the Russians to get rid of. He is later escorted into custody by the Russians and disappears from the world. 
+
+The book also described a lot of things happening after his disappearance, like how the Swedes or the US react to international pledge to rescue him back to civilization, or how the Russians react to those things in response. It gives you a sense of vulnerability at times to see bad things happen to good people but also it tells you how one person can change so many people's life and have a long-lasting effects to the mankind.  
+
 * Endurance: Shackleton's Incredible Voyage - by Alfred Lansing
 
 It's a book about a group of people stuck on the ice around the Antarctica for a few years and strive to find their way back to civilization. They rely on occasional food sources on the ice and sometimes spend a few days rowing in the sea, nonstop, in order to find themselves bigger and more secure floes to stay. I don't really like this book. It's basically telling the same thing after chapter 2..
