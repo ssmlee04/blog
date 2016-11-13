@@ -1,6 +1,6 @@
 ---
 layout: article
-title: CSS styling with bootstrap and flexbox
+title: CSS styling with Bootstrap (web) and Flexbox (mobile)
 ---
 # {{ page.title }}
 
