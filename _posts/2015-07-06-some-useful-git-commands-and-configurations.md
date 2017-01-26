@@ -186,8 +186,3 @@ references:
 * [http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
 
 {{ page.date | date_to_string }}
-
-
-
-
-
