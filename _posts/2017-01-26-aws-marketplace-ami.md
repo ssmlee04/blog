@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Some useful git commands and configurations
+title: AWS Marketplace
 ---
 ## {{ page.title }}
 
