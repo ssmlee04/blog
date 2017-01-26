@@ -6,20 +6,19 @@ title: Continuous integration with CircleCI
 
 #### Continuous integration and continuous delivery
 
-Developers might be pushing their code to the repo all the time. So it's very important to make sure the codes are free of bugs when pushing to the repo before getting pulled by other poeple.  Continuous Integration (CI) is to help you do unit tests and locate the problems early in the code.  Continuous delivery (CD) will send a build command to your machine and tell it to re-build the app automatically when you tell it do. 
+Developers might be pushing their code to the repo all the time. So it's very important to make sure the codes are free of bugs when they're being pushed to the repo.  Continuous Integration (CI) is to help you run some tests and locate the problems early in the code.  Continuous delivery (CD) will send a build signal to your machine and tell it to re-build the app on your request, giving you the minimum downtime between your deployments. 
 
 #### Parallelism
 
-When you upload your code to the cloud you might want to split the unit test cases because if you have too many test cases or you are tesing different things with difference environment variables or settings.  You can setup the tests to tests in parallel, or for CircleCI you can use the env variables `CIRCLE_NODE_TOTAL` and `CIRCLE_NODE_INDEX` to tell which test node you're in and do the tests separately.
+When you upload your code to the cloud you might want to split the test cases maybe because if you have too many test cases (or you are tesing different things with difference environment variables and settings). You can setup the tests to run in parallel, or for CircleCI you can use the env variables `CIRCLE_NODE_TOTAL` and `CIRCLE_NODE_INDEX` to tell which test node you're in and do the tests separately.
 
-#### Integration with EC2
+#### Integration with github, AWS EC2, CodeDeploy
 
 The process is as follows:
 
 * use git to push the code to github
-* CircleCI will get a copy of code and do all the unit tests (that you wrote)
-* CircleCI will tell CodeDeploy to do something when all the tests passed
-* CircleCI will upload revision files to S3 based on circle.yml settings
+* CircleCI will get a copy of code and run all the unit tests that you wrote
+* CircleCI will upload revision files to S3 based on circle.yml settings when all the tests have passed
 * CodeDeploy will pull code from S3 and configure your EC2 and install dependencies
 
 You can also set environment variables for CircleCI testing.
@@ -30,22 +29,27 @@ You need to tell CircleCI which S3 bucket to push revisions to.  And give it the
 
 ![](http://i.stack.imgur.com/B1AF8.jpg)
 
+Also you need to create a CodeDeploy application and selected the corresponding EC2 or auto scaling groups.
 
-#### things to watch out when configuring CircleCI with CodeDeploy.
+![](https://i.stack.imgur.com/etgwy.png)
+![](https://i.stack.imgur.com/gHKdC.png)
 
-* make sure EC2 instance region is the same as S3 bucket region
+**Oh by the way, you also need to install CodeDeploy agents on your machine.**
+
+#### Things to watch out when configuring CircleCI with CodeDeploy.
+
+* **make sure EC2 instance region is the same as S3 bucket region**
 * appspec.yml has a special format (spacing), if the format of appspec.yml is not correct you will see errors for your deployment
-* key_pattern is the relative path of your files (revision) in your S3 bucket. Make sure you enter the same key_pattern in both AWS and circle.yml
-* when you create an EC2 instance you need to install CodeDeploy agent in it so the instance can communicate with CodeDeploy and S3
+* `key_pattern` is the relative path of your files (revision) in your S3 bucket. Make sure you enter the same `key_pattern` in both AWS and circle.yml
 * need to watch out for the relative paths in appspec.yml
+* permission issues: 
 
-* permission issues
-if scripes have insufficient permissions then EC2 will fail to execute the scripts.  you need to make sure those scripts have 755 permissions when copied to your instance. 
+if your scripes have insufficient permissions then EC2 will fail to execute the scripts.  you need to make sure those scripts have 755 permissions when copied to your instance. 
 
 [http://stackoverflow.com/questions/9027584/how-to-change-the-file-mode-on-github](http://stackoverflow.com/questions/9027584/how-to-change-the-file-mode-on-github)
-
 * bash scripts cannot run correctly
-when you do `sudo apt-get install nodejs` there will be intermediate steps that ask if you want to install packages and used disk spaces and you have to type Y or N to proceed installation. those scripts would hang there and timeout resulting in failed deployment. So instead you do
+
+when you do `sudo apt-get install nodejs` there will be intermediate steps that ask if you want to install packages and used disk spaces and you have to type `Y` or `N` to proceed the installation. Those scripts would timeout and result in a failed deployment. So instead you do
 
 `sudo apt-get -y install nodejs npm`
 
