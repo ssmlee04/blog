@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Hello World
-image: http://www.gravatar.com/avatar/5d3b5ee75a670827289364ba8dc89ed4?s=256&d=identicon&r=PG
+image: https://www.gravatar.com/avatar/5d3b5ee75a670827289364ba8dc89ed4?s=256&d=identicon&r=PG
 ---
 # {{ page.title }}
 
