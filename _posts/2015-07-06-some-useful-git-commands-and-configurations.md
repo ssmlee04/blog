@@ -1,15 +1,3 @@
-<style>
-red {
-    color: red;
-}
-green {
-    color: green;
-}
-orange {
-    color: orange;
-}
-</style>
-
 ---
 layout: article
 title: Some useful git commands and configurations
@@ -194,3 +182,15 @@ references:
 * [http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
 * [https://www.toptal.com/git/the-advanced-git-guide?utm_campaign=blog_post_the_advanced_git_guide&utm_medium=email&utm_source=blog_subscribers](https://www.toptal.com/git/the-advanced-git-guide?utm_campaign=blog_post_the_advanced_git_guide&utm_medium=email&utm_source=blog_subscribers)
 {{ page.date | date_to_string }}
+
+<style>
+red {
+    color: red;
+}
+green {
+    color: green;
+}
+orange {
+    color: orange;
+}
+</style>
