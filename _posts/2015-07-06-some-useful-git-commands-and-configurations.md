@@ -125,7 +125,7 @@ $ git remote show origin
 
 ### <red>Some extremely stupid things you might want to avoid</red>
 
-* Get rid of all the credentials in your code before pushing your code to the remote, especially if you're pushing to a public repo (been there done that..)
+* Get rid of all the credentials in your code before pushing your code to the remote repository, especially if you're pushing to a public repo (been there done that..)
 * If you have to push config file to the repo for the first time. You can tell git to stop tracking this file by doing `git update-index --assume-unchanged <file>` and specify the files in `.gitignore` so later when you enter the credentials you don't need to worry about credentials leaked.
 * What I do is have a config file with something like this
 
@@ -146,7 +146,7 @@ and then you just set the environment variables on your server or on your local 
 you can do the following to get rid of intermidiate commits on local and remote
 (generally speaking you shouldn't change info of your git tree when you have pushed to remote already)
 
-```
+```bash
 $ git reset --soft HEAD~5
 $ git commit
 $ git push --force origin master
@@ -154,7 +154,7 @@ $ git push --force origin master
 
 ### Misc
 
-* If the folder is empty, it will not be added into project. But you might want to do something like this: 
+* If the folder is empty, it will not be added into project. But you might want to do something like this to add a empty folder: 
 
 * [How can I add an empty directory to a Git repository?](http://stackoverflow.com/a/932982/1355175)
 
