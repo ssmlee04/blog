@@ -158,19 +158,22 @@ $ git push --force origin master
 
 * [How can I add an empty directory to a Git repository?](http://stackoverflow.com/a/932982/1355175)
 
-* when switch repo folders you will at times have no access to private repos under that organization. Make sure you are a logged-in user under that orgnization by doing
+* when you switch between projects you will sometimes have no access to private repos under that organization. Make sure you are a logged-in user under that orgnization by doing
 
-`ssh-add ~/.ssh/id_rsa_organization`
+```bash
+$ ssh-add ~/.ssh/id_rsa_organization
+```
 
 and then use
 
-`ssh git@github.com`
+```
+$ ssh git@github.com`
+```
 
-to verify your identity.
+to verify that you have loggedin successfully under that orgnization.
 
-
-A successful Git branching model:
-![](http://nvie.com/img/git-model@2x.png)
+* a successful Git branching model:
+![http://nvie.com/img/git-model@2x.png](http://nvie.com/img/git-model@2x.png)
 
 --
 
