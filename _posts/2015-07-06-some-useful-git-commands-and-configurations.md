@@ -1,3 +1,15 @@
+<style>
+red {
+    color: red;
+}
+green {
+    color: green;
+}
+orange {
+    color: orange;
+}
+</style>
+
 ---
 layout: article
 title: Some useful git commands and configurations
@@ -6,72 +18,64 @@ title: Some useful git commands and configurations
 
 ### Abstract
 
-Git is a distributed version control system (DVCS) to handle projects with many people working together. It helps you to keep track of what your code looks like at any time and if necessary you can go back in time to do something about the code easily.
+Git is a distributed version control system (DVCS) for many people to work together on the same project. It helps you keep track of what your code looks like any time and, if necessary, you can go back in time to do something about the code previously commited easily.
 
 ### Some basic configurations:
 
+Git supports colored terminal output: 
 ```bash
 $ git config --global color.ui true
 ```
 
-it gives your terminal color when displaying git stuff
-
+You can configure your git to remember your credential for a period of time: 
 ```bash
 $ git config --global credential.helper "cache --timeout=3600"
 ```
 
-by doing this you won't have to enter your username and password when you're pushing refs to the remote 
-
+You can list the files changed for a specific commit:
 ```bash
 $ git config --global alias.files '!f() { git diff --name-status $1^ $1; }; f'
 ```
 
-list the files changed for a specific commit ( later you can simply do `git files development` to see difference of `development` and `development^` )
-
+You can select / unselect the files in the working tree that cannot be updated even if there are changes: 
 ```bash
 $ git config --global alias.hide 'update-index --assume-unchanged'
 $ git config --global alias.unhide 'update-index --no-assume-unchanged'
 ```
 
-select / unselect the files in the working tree that cannot be updated.
-
+Able to visualize a tree easily and more beautifully compared to just doing `git log`
 ```bash
 $ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --all"
 ```
 
-this visualized the commit trees for you (important)
+![https://i.stack.imgur.com/xnRLj.png](https://i.stack.imgur.com/xnRLj.png)
 
-![https://s3.amazonaws.com/clearstreet/misc/d1e4a2536d4ff16a23.png](https://s3.amazonaws.com/clearstreet/misc/d1e4a2536d4ff16a23.png)
-
+Global flags: you can use -g flag to change your setting globally. 
 ```bash
 $ git config user.name “Shih-Min Lee”
 $ git config -g user.email “ssmlee04@gmail.com”
 ```
 
-when you want to do global configuration. add `-g` flag. Otherwise it's per-repo level configuration
-
-### Some other super lazy configurations
+### Some other lazy configurations
 
 If you're super lazy you can do git df instead of git diff... etc
-
 ```bash
 $ git config --global alias.df diff
 ```
 
+You can open a file editor and see the difference one by one:
 ```bash
 $ git config --global alias.dt difftool
 $ git config --global alias.st status
 ```
 
-not very useful for me, though
-
 ### Mac-specific configs
 
-* on mac. .gitconfig is locate at `$HOME/.gitconfig`
+* on a mac. `.gitconfig` is locate at `$HOME/.gitconfig`. you should be able to find your git settings there. 
 * the default git on mac is something called Apple git, you might want to switch it to a real git. You can simply do 
 
-```
-brew install git
+```bash
+$ brew install git
 ```
 
 but the current git is pointed to default apple git location. you need to add the path to the `$PATH` variable
@@ -80,7 +84,9 @@ but the current git is pointed to default apple git location. you need to add th
 export PATH="/usr/local/bin:$PATH"
 ```
 
-in `~/.bash_profile` to solve this issue. Reason why you want to switch away from Apple git is because you might want to install something like `bash-completion`, which behaves just like git autocomplete in ubuntu when you press the Tab key. 
+in `~/.bash_profile` to solve this issue. 
+
+Reason why you want to switch away from Apple git is because you might want to install something like `bash-completion`, which behaves just like git autocomplete in ubuntu when you press the Tab key. 
 
 `$ git --version`
 
@@ -89,24 +95,26 @@ in `~/.bash_profile` to solve this issue. Reason why you want to switch away fro
 > git version 2.3.2 (Apple Git-55)
 ```
 
-```
-brew install bash-completion
+```bash
+$ brew install bash-completion
 ```
 
 then you will be using a newer version git
 
 `$ git --version`
-> Shih-Mins-MacBook-Pro:project1 ssmlee04$ git --version
+> Computer:proj ssmlee04$ git --version
 > git version 2.2.1
 
 ### Some basic commands
 
+You can use this command to clone projects to your local machine. 
 ```bash
 $ git clone
 ```
 
-You can use this command to clone git projects to local machine.  For example https://github.com/linnovate/mean.git is a open source project and you can simply do `git clone https://github.com/linnovate/mean.git` to check the source code or start working on the project.
-In the future if you feel your changes would contribute to the project you can push your code and submit a pull request (PR) to notify the project manager so they can review your code or maybe even merge your code into the codebase.
+For example meanio is a open source project that you think is useful and would like to make a copy and something yourself. You can simply do `git clone https://github.com/linnovate/mean.git` to get a copy of the source code.
+
+In the future if you feel your changes could contribute to the project you can push your code and submit a pull request to notify the project manager so they can review your code and merge your code into the codebase.
 
 ```bash
 $ git checkout -b new-branch-name
@@ -119,14 +127,14 @@ you can create a branch `new-branch-name` with above methods. Also you can creat
 $ git branch
 ```
 
-list the branches that exists in the local repo.  This list might not be in sync with your remote repo and if you want to list the remote branches you might want to do one of the following: 
+list the branches that exists in the local repo. This list might not be in sync with your remote repo and if you want to list the remote branches you might want to do one of the following: 
 
 ```bash
 $ git ls-remote --heads
 $ git remote show origin
 ```
 
-### <font color='red'>Some extremely stupid things you might want to avoid</font>
+### <red>Some extremely stupid things you might want to avoid</red>
 
 * Get rid of all the credentials in your code before pushing your code to the remote, especially if you're pushing to a public repo (been there done that..)
 * If you have to push config file to the repo for the first time. You can tell git to stop tracking this file by doing `git update-index --assume-unchanged <file>` and specify the files in `.gitignore` so later when you enter the credentials you don't need to worry about credentials leaked.
@@ -184,5 +192,5 @@ references:
 * [http://aknow-work.blogspot.tw/2013/10/git.html](http://aknow-work.blogspot.tw/2013/10/git.html)
 * [http://pcottle.github.io/learnGitBranching/](http://pcottle.github.io/learnGitBranching/)
 * [http://nvie.com/posts/a-successful-git-branching-model/](http://nvie.com/posts/a-successful-git-branching-model/)
-
+* [https://www.toptal.com/git/the-advanced-git-guide?utm_campaign=blog_post_the_advanced_git_guide&utm_medium=email&utm_source=blog_subscribers](https://www.toptal.com/git/the-advanced-git-guide?utm_campaign=blog_post_the_advanced_git_guide&utm_medium=email&utm_source=blog_subscribers)
 {{ page.date | date_to_string }}
