@@ -90,8 +90,9 @@ $ brew install bash-completion
 then you will be using a newer version git
 
 `$ git --version`
-> Computer:proj ssmlee04$ git --version
-> git version 2.2.1
+
+Computer:proj ssmlee04$ git --version
+git version 2.2.1
 
 ### Some basic commands
 
