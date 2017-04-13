@@ -76,23 +76,14 @@ in `~/.bash_profile` to solve this issue.
 
 Reason why you want to switch away from Apple git is because you might want to install something like `bash-completion`, which behaves just like git autocomplete in ubuntu when you press the Tab key. 
 
-`$ git --version`
+```bash
+$ git --version
 
-```
 > Shih-Mins-MacBook-Pro:project1 ssmlee04$ git --version
 > git version 2.3.2 (Apple Git-55)
 ```
 
-```bash
-$ brew install bash-completion
-```
-
-then you will be using a newer version git
-
-`$ git --version`
-
-Computer:proj ssmlee04$ git --version
-git version 2.2.1
+Once you update your git you should be able to install other useful packages.
 
 ### Some basic commands
 
