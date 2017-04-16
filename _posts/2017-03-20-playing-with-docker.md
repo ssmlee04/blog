@@ -63,5 +63,6 @@ to start the 2 containers.
 references:
 
 * [http://www.dwmkerr.com/learn-docker-by-building-a-microservice/](http://www.dwmkerr.com/learn-docker-by-building-a-microservice/)
+* [https://www.toptal.com/git/the-advanced-git-guide?utm_campaign=blog_post_the_advanced_git_guide&utm_medium=email&utm_source=blog_subscribers](https://www.toptal.com/git/the-advanced-git-guide?utm_campaign=blog_post_the_advanced_git_guide&utm_medium=email&utm_source=blog_subscribers)
 
 {{ page.date | date_to_string }}
