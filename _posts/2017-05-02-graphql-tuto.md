@@ -21,7 +21,7 @@ You can think of queries as HTTP GETs and mutations as HTTP POSTs, PUTs or DELET
 
 I developed a simple ghaphql-express project that communicates with mongodb and please feel free to clone the stuff and see how it works.
 
-[https://github.com/ssmlee04/ghaphql-express-example.git](https://github.com/ssmlee04/ghaphql-express-example.git)
+[https://github.com/ssmlee04/graphql-express-example.git](https://github.com/ssmlee04/graphql-express-example.git)
 
 --
 
