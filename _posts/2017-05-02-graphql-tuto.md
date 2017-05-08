@@ -13,6 +13,16 @@ It's a query langauge and a format for asking for data. It provides an standard 
 
 Why is REST not enough? Fetching multiple resources requires multiple HTTP requests and we don't want that to slow down loading of our application. In stead you want to have one endpoint for serving all the api endpoints and you can bundle everything into 1 response and make thing easy. 
 
+### Queries and Mutations
+
+You can think of queries as HTTP GETs and mutations as HTTP POSTs, PUTs or DELETEs. 
+
+### Misc
+
+I developed a simple ghaphql-express project that communicates with mongodb and please feel free to clone the stuff and see how it works.
+
+[https://github.com/ssmlee04/ghaphql-express-example.git](https://github.com/ssmlee04/ghaphql-express-example.git)
+
 --
 
 references:
@@ -21,5 +31,5 @@ references:
 * [GraphQL vs REST: Overview](https://philsturgeon.uk/api/2017/01/24/graphql-vs-rest-overview/)
 * [Nested schemas example](https://gist.github.com/xpepermint/7376b8c67caa926e19d2)
 * [Queries and Mutations](http://graphql.org/learn/queries/)
-* [https://medium.com/@gethylgeorge/setting-up-a-simple-graphql-server-with-node-express-and-mongoose-ff8a1071af53](https://medium.com/@gethylgeorge/setting-up-a-simple-graphql-server-with-node-express-and-mongoose-ff8a1071af53)
+* [Setting up a simple GraphQL Server with Node, Express and Mongoose](https://medium.com/@gethylgeorge/setting-up-a-simple-graphql-server-with-node-express-and-mongoose-ff8a1071af53)
 {{ page.date | date_to_string }}
