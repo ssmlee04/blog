@@ -1,3 +1,10 @@
+---
+layout: article
+title: Front-end related questions
+---
+# {{ page.title }}
+
+
 ### If you have 5 different stylesheets, how would you best integrate them into the site?
 
 Try to see if the css stylesheets are modulized or is applicable in a global context. If possible I only use css libraries that everyone knows like bootstrap or materialize. 

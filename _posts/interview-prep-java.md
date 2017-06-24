@@ -1,3 +1,9 @@
+---
+layout: article
+title: Java related questions
+---
+# {{ page.title }}
+
 ### What is a class?
 
 A class is simply a representation of a type of object with pre-defined properties and behaviors.

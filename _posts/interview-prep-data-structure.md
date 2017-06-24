@@ -1,3 +1,9 @@
+---
+layout: article
+title: Data structures related questions
+---
+# {{ page.title }}
+
 ### What is the difference between Stack and Queue 
 
 Stack is LIFO and queue is FIFO

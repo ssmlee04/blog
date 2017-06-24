@@ -1,3 +1,9 @@
+---
+layout: article
+title: How do computers work
+---
+# {{ page.title }}
+
 ### How does threads and stacks work
 
 The stack is attached to a thread, so when the thread exits the stack is reclaimed.

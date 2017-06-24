@@ -1,3 +1,10 @@
+---
+layout: article
+title: Javascript related questions
+---
+# {{ page.title }}
+
+
 ### Explain how `this` works in JavaScript
 
 `this` evaluates to the value of the current execution context.

@@ -1,3 +1,9 @@
+---
+layout: article
+title: Docker related
+---
+# {{ page.title }}
+
 ### What is Docker?
 
 Docker is a service for you to package and run your applications in a separate and unified environment. A Docker container is a place on your host that has it's own port rules, filesystem, system libraries...etc. This guarantees that the software will always run the same, regardless of its environment.
