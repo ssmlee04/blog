@@ -1,5 +1,9 @@
-# things to ask about in the future
+### Things to think about in the future as a Backend / Fontend Engineer
 
-* logs (where to view them)
-* process replication (how)
-* outer services that we are using
+* Logs (where to view them)
+* Process replication (how)
+* Outer services that we are using
+* Down for maintenance screen
+* How to go migrations?
+
+

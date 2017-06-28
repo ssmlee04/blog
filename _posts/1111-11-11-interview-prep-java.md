@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Java related questions
+interview: true
 ---
 # {{ page.title }}
 

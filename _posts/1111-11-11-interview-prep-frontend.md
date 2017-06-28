@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Front-end related questions
+interview: true
 ---
 # {{ page.title }}
 

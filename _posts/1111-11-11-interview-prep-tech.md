@@ -1,3 +1,17 @@
+---
+layout: article
+title: Internet and machine related questions
+interview: true
+---
+# {{ page.title }}
+
+
+### How does threads and stacks work
+
+The stack is attached to a thread, so when the thread exits the stack is reclaimed.
+
+The size of the stack is set when a thread is created. The size of the heap is set on application startup, but can grow as space is needed.
+
 ### What is MX record
 
 MX record is a type of resource record in the Domain Name System that specifies the mail server responsible for receiving emails. How it works is when an E-mail is sent through the Internet, the sending mail transfer agent queries the domain for it's MX for a list of mail servers able to handle the emailing sending before establishing an SMTP connection. 
@@ -165,8 +179,7 @@ After the symmetrical encryption is established to secure communications between
 
 ### What is the difference between authentication and authorization
 
-Authentication is the process of verifying who you are. When you log on to a PC with a user name and password you are authenticating.
-Authorization is the process of verifying that you have access to something. Gaining access to a resource (e.g. directory on a hard disk) because the permissions configured on it allow you access is authorization.
+Authentication is the process of verifying who you are. Authorization is the process of verifying that you have access to something. 
 
 ### What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 
@@ -180,3 +193,9 @@ I prefer to work on a mac, use gmail to send and receive emails. I code using Su
 ### Which version control systems are you familiar with?
 
 git 
+
+### Explain OAuth to me
+
+OAuth allows an end user's account information to be used by third-party services, such as Facebook, without exposing the user's password. OAuth acts as an intermediary on behalf of the end user, providing the service with an access token that authorizes specific account information to be shared. The process for obtaining the token is called a flow.
+
+

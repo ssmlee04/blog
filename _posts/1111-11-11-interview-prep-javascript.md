@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Javascript related questions
+interview: true
 ---
 # {{ page.title }}
 
@@ -170,11 +171,9 @@ It is a web application framework to help organize your web application into an 
 
 Concurrency means, essentially, that task A and task B both need to happen independently of each other, and A starts running, and then B starts before A is finished.
 
-
 Concurrent programming regards operations that appear to overlap and is primarily concerned with the complexity that arises due to non-deterministic control flow. The quantitative costs associated with concurrent programs are typically both throughput and latency. Concurrent programs are often IO bound but not always, e.g. concurrent garbage collectors are entirely on-CPU. The pedagogical example of a concurrent program is a web crawler. This program initiates requests for web pages and accepts the responses concurrently as the results of the downloads become available, accumulating a set of pages that have already been visited. Control flow is non-deterministic because the responses are not necessarily received in the same order each time the program is run. This characteristic can make it very hard to debug concurrent programs. Some applications are fundamentally concurrent, e.g. web servers must handle client connections concurrently. Erlang is perhaps the most promising upcoming language for highly concurrent programming.
 
 Parallel programming concerns operations that are overlapped for the specific goal of improving throughput. The difficulties of concurrent programming are evaded by making control flow deterministic. Typically, programs spawn sets of child tasks that run in parallel and the parent task only continues once every subtask has finished. This makes parallel programs much easier to debug. The hard part of parallel programming is performance optimization with respect to issues such as granularity and communication. The latter is still an issue in the context of multicores because there is a considerable cost associated with transferring data from one cache to another. Dense matrix-matrix multiply is a pedagogical example of parallel programming and it can be solved efficiently by using Straasen's divide-and-conquer algorithm and attacking the sub-problems in parallel. Cilk is perhaps the most promising language for high-performance parallel programming on shared-memory computers (including multicores).
-
 
 
 ### How does Node.js work asynchronously without multithreading?
@@ -206,6 +205,23 @@ null == undefined   // true
 TLS handshake it will send packets over the channel
 
 
+### How does the following code work? 
 
 
+
+```
+var done = false;
+
+// set a timer for 1 second from now to set done to true
+setTimeout(function() {
+  done = true;
+}, 1000);
+
+// spin wait for the done value to change
+while (!done) { /* do nothing */}
+
+console.log("finally, the done value changed!");
+```
+
+Answer: it will be an infinite loop.
 

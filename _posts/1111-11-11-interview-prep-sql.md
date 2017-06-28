@@ -1,3 +1,11 @@
+---
+layout: article
+title: Sql related questions
+interview: true
+---
+# {{ page.title }}
+
+
 ### Explain sql joins
 
 ![](https://i.stack.imgur.com/1UKp7.png)

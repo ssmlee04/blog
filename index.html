@@ -36,8 +36,14 @@ title: My Blog
           <p> Latest Article</p>
           <ul>
       　　{% for post in site.posts %}
-      　　　　<li>{{ post.date | date_to_string }}
-              <a href="{{ post.url }}">{{ post.title }}
+      　　　　<li>{% if post.interview == null %}
+                {{ post.date | date_to_string }} 
+              {% endif %}
+              <a href="{{ post.url }}">
+                {% if post.interview != null %}
+                  Interview prep: 
+                {% endif %}
+                {{ post.title }}
               </a>
               {% if post.image %}
               <br />

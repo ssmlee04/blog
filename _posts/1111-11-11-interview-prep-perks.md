@@ -1,3 +1,10 @@
+---
+layout: article
+title: Perks and Math related questions
+interview: true
+---
+# {{ page.title }}
+
 
 # Perks
 

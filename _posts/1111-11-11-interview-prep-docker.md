@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Docker related
+interview: true
 ---
 # {{ page.title }}
 

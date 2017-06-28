@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Data structures related questions
+interview: true
 ---
 # {{ page.title }}
 
