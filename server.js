@@ -1,7 +1,13 @@
 /* @flow */
 
-var a = function(number) {
-	return 1
+class Person {
+  getPerson() {
+  	return this;
+  }
 }
 
-console.log(a('aa'))
+let person = new Person();
+let { getPerson } = person;
+
+console.log(getPerson() === person)
+// true
