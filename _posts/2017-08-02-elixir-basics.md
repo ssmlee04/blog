@@ -47,7 +47,9 @@ Keyword lists:
 - Keys are ordered.
 - Keys may not be unique.
 
-`[foo: "bar", hello: "world"]`
+```
+[foo: "bar", hello: "world"]
+```
 
 Maps:
 
@@ -55,7 +57,9 @@ Maps:
 - Keys can be of any type and is unordered.
 - Keys are unique.
 
-`%{:foo => "bar", "hello" => :world}`
+```
+%{:foo => "bar", "hello" => :world}
+```
 
 Match operator (=): 
 
