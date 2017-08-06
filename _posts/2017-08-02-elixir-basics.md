@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Elixir and Erlang basics
+title: Elixir basics
 ---
 # {{ page.title }}
 
