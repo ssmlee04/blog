@@ -79,7 +79,11 @@ iex> sum.(2, 3)
 5
 ```
 
+Pipes: 
 
+If the arity of a function is more than 1, then make sure to use parentheses.
+
+Sigils (~):
 
 
 
