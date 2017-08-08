@@ -41,6 +41,14 @@ An important feature of Elixir is that any two types can be compared.
 number < atom < reference < function < port < pid < tuple < map < list < bitstring
 ```
 
+Lists:
+
+++/2 is for list concatenation.
+--/2 is for list subtraction.
+hd
+tl
+
+
 Keyword lists:
 
 - Keys are atoms.
@@ -67,7 +75,7 @@ Match operator (=):
 
 Pin operator (^):
 
-- Pin a variable to a value.
+- Pin a variable to a value when you're doing pattern matching.
 
 Functions: 
 
@@ -85,7 +93,9 @@ If the arity of a function is more than 1, then make sure to use parentheses.
 
 Sigils (~):
 
+Doctests: 
 
+You can write tests directly from the documentation. 
 
 
 
