@@ -8,6 +8,8 @@ title: Elixir basics
 
 ### Summary
 
+Its original use case was to program Ericsson’s telephone switches.
+
 A float is 64-bit double precision and support e for exponent values:
 Floating point numbers require a decimal after at least one digit
 An atom is a constant whose name is its value.
