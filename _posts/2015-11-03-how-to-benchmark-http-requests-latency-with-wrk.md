@@ -1,14 +1,14 @@
 ---
 layout: article
-title: How to benchmark http request latencies
+title: Benchmark HTTP requests with wrk
 ---
 ## {{ page.title }}
 
 ### Abstract
 
-wrk is an open-source tool that benchmarks the latency of http requests of your service. It generates a huge amount of http `GET`s or `POST`s or `PUT`s and send to the server that you want to do the benchmark.
+wrk is an open-source tool that benchmarks the latency of http requests of your service. It generates a huge amount of HTTP requests and send the requests to the server for you.
 
-the common input arguments are
+You can benchmark the HTTP GET, POST, PUT or DELETE requests using this. The common input arguments are
 
     -c, --connections <N>  Connections to keep open
     -d, --duration    <T>  Duration of test
@@ -38,7 +38,7 @@ Transfer/sec:    121.64KB
 
 ### Dealing with POST and PUT requests
 
-A sample command would be like this
+You need to write a lua script and put the request body or header inside the script. A sample command looks like this:
 
 ```
 wrk -c 100 -t 4 -d 30s -s post.lua http://localhost:3000
@@ -59,7 +59,9 @@ wrk.headers["Content-Type"] = "application/x-www-form-urlencoded"
 
 And then you can do: 
 
+```
 wrk -c1 -t1 -d5s -s post.lua http://localhost:3000/apis/v1/auth/login
+```
 
 #### JSON
 
@@ -74,7 +76,9 @@ wrk.headers["Content-Type"] = "application/json"
 
 And then you can do: 
 
+```
 wrk -c1 -t1 -d5s -s post.lua http://localhost:3000/apis/v1/auth/login
+```
 
 ![http://i.stack.imgur.com/0toQk.png](http://i.stack.imgur.com/0toQk.png)
 
@@ -82,7 +86,7 @@ wrk -c1 -t1 -d5s -s post.lua http://localhost:3000/apis/v1/auth/login
 
 references:
 
-* [Sample lua scripts](https://github.com/wg/wrk/tree/master/scripts)
+* [Sample Lua scripts](https://github.com/wg/wrk/tree/master/scripts)
 * [WRK the HTTP benchmarking tool - Advanced Example](http://czerasz.com/2015/07/19/wrk-http-benchmarking-tool-example/)
 
 {{ page.date | date_to_string }}
