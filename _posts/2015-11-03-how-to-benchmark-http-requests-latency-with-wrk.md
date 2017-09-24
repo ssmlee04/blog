@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Benchmark HTTP requests with wrk
+title: 😀 Benchmark HTTP requests with wrk
 ---
 ## {{ page.title }}
 
