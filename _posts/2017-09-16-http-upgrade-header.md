@@ -1,6 +1,6 @@
 ---
 layout: article
-title: HTTP/1.1 Upgrade header
+title: 😀 HTTP/1.1 Upgrade header
 ---
 # {{ page.title }}
 
