@@ -8,12 +8,11 @@ title: Elixir basics
 
 ### Summary
 
-Its original use case was to program Ericsson’s telephone switches.
+Elixir is a functional programming language to develop high-concurrency, highly-scalable and fault tolerant applications. It also ships with iex (the Elixir interactive shell) and mix (a set of tools to creaet your applications) so that you can get your hands on your applications pretty quickly. 
 
-A float is 64-bit double precision and support e for exponent values:
-Floating point numbers require a decimal after at least one digit
-An atom is a constant whose name is its value.
-There are three additional operators whose first argument must be a boolean (true or false):
+Elixir run Erlang VM (BEAM) and Erlang's original use case was to program Ericsson’s telephone switches. You can imagine a telephone system is highly concurrent, never down for maintenance, requires low latency and has low hardware requirements. And  Erlang provides a solution for the scenarios. 
+
+### Basics:
 
 ```
 iex> true and 42
@@ -43,73 +42,22 @@ An important feature of Elixir is that any two types can be compared.
 number < atom < reference < function < port < pid < tuple < map < list < bitstring
 ```
 
-Lists:
-
-++/2 is for list concatenation.
---/2 is for list subtraction.
-hd
-tl
-
-
-Keyword lists:
-
-- Keys are atoms.
-- Keys are ordered.
-- Keys may not be unique.
-
-```
-[foo: "bar", hello: "world"]
-```
-
-Maps:
-
-- Maps are un-ordered.
-- Keys can be of any type and is unordered.
-- Keys are unique.
-
-```
-%{:foo => "bar", "hello" => :world}
-```
-
-Match operator (=): 
-
-- Say x = 1. If the match succeeds, it returns the value of the equation. Otherwise, it throws an error.
-
-Pin operator (^):
-
-- Pin a variable to a value when you're doing pattern matching.
-
-Functions: 
-
-In Elixir, functions are first class citizens.
-
-```
-iex> sum = fn (a, b) -> a + b end
-iex> sum.(2, 3)
-5
-```
-
-Pipes: 
-
-If the arity of a function is more than 1, then make sure to use parentheses.
-
-Sigils (~):
+### Testing
 
 Doctests: 
 
 You can write tests directly from the documentation. 
 
+### GenServer: 
 
-
-
-Actor model:
-
+### Supervisors:
 
 
 --
 
 references:
 
-* [https://elixirschool.com/en/lessons/basics/enum/](https://elixirschool.com/en/lessons/basics/enum/)
+* [Elixir School](https://elixirschool.com/en/lessons/basics/enum/)
+* [Elixir cheatsheet](https://elixir-examples.github.io/)
 
 {{ page.date | date_to_string }}

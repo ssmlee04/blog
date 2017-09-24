@@ -28,6 +28,12 @@ riak-admin bucket-type status counters
 riak-admin cluster status
 ```
 
+Create a bucket
+
+```
+curl -v http://127.0.0.1:8098/riak/newBucket -X PUT -H Content-Type:application/json --data-binary '{"props":{"n_val":5, "datatype":"counter"}}'
+```
+
 --
 
 references:
