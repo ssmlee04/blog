@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Use Apache Bench to benchmark your HTTP requests
+title: 😀 Use Apache Bench to benchmark your HTTP requests
 ---
 # {{ page.title }}
 
