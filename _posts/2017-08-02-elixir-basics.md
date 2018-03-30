@@ -8,17 +8,19 @@ title: Elixir basics
 
 ### Summary
 
-Elixir is a functional programming language to develop high-concurrency, highly-scalable and fault tolerant applications. It also ships with iex (the Elixir interactive shell) and mix (a set of tools to creaet / compile / test your applications) so that you can get your hands on your applications pretty quickly. 
+Elixir is a functional programming language to develop high-concurrency, highly-scalable and fault tolerant applications. It also ships with iex (the Elixir interactive shell) and mix (a set of tools to creaet / compile / test your applications) so that you can get your hands on your applications pretty quickly.
 
-Elixir run Erlang VM (BEAM) and Erlang's original use case was to program Ericsson’s telephone switches. You can imagine a telephone system is highly concurrent, never down for maintenance, requires low latency and has low hardware requirements. And  Erlang provides a solution for the scenarios. 
+Elixir run Erlang VM (BEAM) and Erlang's original use case was to program Ericsson’s telephone switches. You can imagine a telephone system is highly concurrent, never down for maintenance, requires low latency and has low hardware requirements. And Erlang provides a solution for the scenario.
 
 ### OTP
 
-OTP (Open Telecom Platform) is a set of libraries that ships with Erlang. It's basically a development environment for developing highly-concurrent, fault-tolerant appications.
+OTP (Open Telecom Platform) is a set of libraries that ships with Erlang. It's basically a development environment for developing highly-concurrent, fault-tolerant appications. Those applications are designed to run very simple tasks but very efficiently.
 
 ### Basics:
 
 ```
+iex> 0 || nil
+0 # this is kind of a pitfall
 iex> true and 42
 42
 iex> false or true
@@ -48,11 +50,11 @@ number < atom < reference < function < port < pid < tuple < map < list < bitstri
 
 ### Testing
 
-Doctests: 
+Doctests:
 
-You can write tests directly from the documentation. 
+You can write tests directly from the documentation.
 
-### GenServer: 
+### GenServers:
 
 ### Supervisors:
 
@@ -64,20 +66,19 @@ Data is organized as a set of dynamic tables, which can store tuples. Each table
 
 Tables are divided into four different types, set, ordered_set, bag and duplicate_bag. A set or ordered_set table can only have one object associated with each key. A bag or duplicate_bag can have many objects associated with each key.
 
-The number of tables stored at one Erlang node is limited. The current default limit is approximately 1400 tables. 
+The number of tables stored at one Erlang node is limited. The current default limit is approximately 1400 tables.
 
+### Mnesia
 
-### Processes: 
+### Processes:
 
-An elixir process is not like a unix process. 
+An elixir process is not like a unix process.
 
-Processes are isolated from each other, run concurrent to one another and communicate via message passing
-Processes in Elixir are extremely lightweight in terms of memory and CPU (unlike threads in many other programming languages). Because of this, it is not uncommon to have tens or even hundreds of thousands of processes running simultaneously.
+Processes are isolated from each other, run concurrent to one another and communicate via message passing. Processes in Elixir are extremely lightweight in terms of memory and CPU (unlike threads in many other programming languages). Because of this, it is not uncommon to have tens or even hundreds of thousands of processes running simultaneously.
 
 In fact, the Erlang VM supports up to 134 million (!) processes.
 
-### Dialyzer: 
-
+### Dialyzer:
 
 ### Misc:
 
