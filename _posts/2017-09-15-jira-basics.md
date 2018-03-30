@@ -6,7 +6,7 @@ title: Jira basics
 
 ## Abstract
 
-Jira is a good projcet management tool.
+Jira is a good project management tool. Very neat. You can create epics or stories or issues and send the tickets back and forth teammembers very easily.
 
 
 --

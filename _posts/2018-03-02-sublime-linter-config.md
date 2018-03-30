@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Sublime linter configuration
+title: 😀 Sublime linter configuration
 ---
 # {{ page.title }}
 
