@@ -57,24 +57,24 @@ wrk.body   = "email=xxx&password=xxx"
 wrk.headers["Content-Type"] = "application/x-www-form-urlencoded"
 ```
 
-And then you can do: 
+And then you can do:
 
 ```
 wrk -c1 -t1 -d5s -s post.lua http://localhost:3000/apis/v1/auth/login
 ```
 
-#### JSON
+#### application/json
 
 ```
 -- example HTTP POST, PUT, DELETE script which demonstrates setting the
 -- HTTP method, body, and adding a header
 
-wrk.method = "POST" 
-wrk.body = '{"password":"xxx","email":"xxx"}' 
+wrk.method = "POST"
+wrk.body = '{"password":"xxx","email":"xxx"}'
 wrk.headers["Content-Type"] = "application/json"
 ```
 
-And then you can do: 
+And then you can do:
 
 ```
 wrk -c1 -t1 -d5s -s post.lua http://localhost:3000/apis/v1/auth/login
