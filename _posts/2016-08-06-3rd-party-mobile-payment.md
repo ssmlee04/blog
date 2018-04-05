@@ -1,6 +1,6 @@
 ---
 layout: article
-title: 3rd party payment system integration
+title: 😀 3rd party payment system integration
 
 ---
 # {{ page.title }}
