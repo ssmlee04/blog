@@ -1,6 +1,6 @@
 ---
 layout: article
-title: SSL Analyzer
+title: 😀 SSL Analyzer
 ---
 # {{ page.title }}
 
