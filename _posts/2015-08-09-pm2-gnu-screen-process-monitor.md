@@ -10,7 +10,7 @@ There are at times your service will be facing problems and you need to dig into
 
 #### pm2
 
-Sometimes it's ok to run the processes in the background. And sometimes it's not.  What if you want to run 3 processes and through ssh at the same time?  The traditional way to do it is open 3 terminals and ssh to the same ip, start 3 processes separately.  But when you get disconnected to the internet and then all those processes would be terminated. 
+Sometimes it's ok to run the processes in the background. And sometimes it's not.  What if you want to run 3 processes and through ssh at the same time?  The traditional way to do it is open 3 terminals and ssh to the same ip, start 3 processes separately.  But when you get disconnected to the internet and then all those processes would be terminated.
 
 `pm2` is a way to keep those processes alive and at the same time for you to easier monitor those processes. I usually combine `pm2` with `screen` so you can switch the screen easily using GNU `screen`.
 
@@ -47,8 +47,8 @@ $ ctrl + a + d
 detach from this screen
 
 ```bash
-$ screen -r 
-or 
+$ screen -r
+or
 $ screen -r xxxx
 ```
 re-attach to the previous running screen process with id: xxxx
@@ -85,6 +85,12 @@ $ pm2 monit
 starts a pm2 monitor
 
 ![](https://raw.githubusercontent.com/unitech/pm2/master/pres/pm2-monit.png)
+
+```
+$ pm2 start server.js -i 0
+```
+
+Start your process on all of your cpu cores. Notice you're not gonna get 8 times request per second if you have 8 cores because of some overheads.
 
 --
 
