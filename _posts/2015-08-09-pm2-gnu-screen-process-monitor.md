@@ -1,18 +1,21 @@
 ---
 layout: article
-title: Use pm2 and GNU screen to monitor processes in one session
+title: 😀 pm2 and GNU screen monitoring
 ---
 ## {{ page.title }}
 
 #### Abstract
 
-There are at times your service will be facing problems and you need to dig into the problems somehow. So it's very important to log the events so later you can track what is happening. You can record the logs in separate files using modules like winston or even simplier you can `console.log` the error messages and use pm2 to read logs in realtime and monitor memory and cpu processes. It also visualizes the cpu and memory usages for you easily in case it's in production mode or if you're just stress testing you server.
+pm2 is a processing logging and monitoring application. you can use it to monitor memory and cpu usages. It can also be configured to log the outputs to different transports. It's really really cool.
 
 #### pm2
 
-Sometimes it's ok to run the processes in the background. And sometimes it's not.  What if you want to run 3 processes and through ssh at the same time?  The traditional way to do it is open 3 terminals and ssh to the same ip, start 3 processes separately.  But when you get disconnected to the internet and then all those processes would be terminated.
+Sometimes it's not ok to run the processes in the background. Let's say you want to run 3 processes through ssh at the same time. The traditional way to do it is open 3 terminals and ssh to the same ip address and start 3 processes separately. But you can also ssh into 1 terminal and run 3 processes in the backend. However, when the process is in the background it becomes hard to know what exactly is going on.
 
-`pm2` is a way to keep those processes alive and at the same time for you to easier monitor those processes. I usually combine `pm2` with `screen` so you can switch the screen easily using GNU `screen`.
+`pm2` is a way to keep those processes alive and at the same time monitor those processes for you.
+
+I tried to combine `pm2` with `screen` so you can switch the screen easily using GNU `screen`.
+
 
 ```bash
 $ sudo apt-get -y install pm2 screen
