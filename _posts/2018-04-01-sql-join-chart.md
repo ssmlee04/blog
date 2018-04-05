@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Sql join
+title: 😀 Sql joins
 ---
 # {{ page.title }}
 
