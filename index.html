@@ -19,13 +19,19 @@ title: My Blog
     <![endif]-->
 
     <title>Personal website by ssmlee04</title>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7105751936392947",
+        enable_page_level_ads: true
+      });
+    </script>
   </head>
 
   <body>
     <header>
       <div class="inner">
-        <h1>Personal website</h1>
-        <h2>dating, search</h2>
+        <h1>Shih-Min Lee's Personal website</h1>
+        <h2>dating, chating, food, games, search</h2>
         <a href="https://github.com/ssmlee04" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
@@ -37,11 +43,11 @@ title: My Blog
           <ul>
       　　{% for post in site.posts %}
       　　　　<li>{% if post.interview == null %}
-                {{ post.date | date_to_string }} 
+                {{ post.date | date_to_string }}
               {% endif %}
               <a href="{{ post.url }}">
                 {% if post.interview != null %}
-                  Interview prep: 
+                  Interview prep:
                 {% endif %}
                 {{ post.title }}
               </a>
@@ -73,6 +79,6 @@ title: My Blog
       </div>
     </div>
 
-  
+
   </body>
 </html>
