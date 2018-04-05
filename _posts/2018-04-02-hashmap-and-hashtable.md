@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Difference between hashmap and hashtable
+title: 😀 Difference between hashmap and hashtable
 ---
 # {{ page.title }}
 
