@@ -1,20 +1,29 @@
 ---
 layout: article
-title: GraphQL
+title: 😀 GraphQL
 ---
 # {{ page.title }}
 
 ### Abstract
 
-GraphQL is not a database but instead it's a way of fetching data for you and can work with any database.
+GraphQL is a way of talking to your databases efficiently.
 
-It's a query langauge and a format for asking for data. It provides an standard of what to respond when someone sends graphQL something. 
+It's a query langauge and a format for asking for data. It provides an standard of what to respond when someone sends graphQL something.
 
-Why is REST not enough? Fetching multiple resources requires multiple HTTP requests and we don't want that to slow down loading of our application. In stead you want to have one endpoint for serving all the api endpoints and you can bundle everything into 1 response and make thing easy. 
+A typical use case is when you are fetching multiple resources from the server you are sending multiple HTTP requests to the server, and the server sends multiple requests to the database and you end up spending a lot of time waiting for those responses. Sometimes it's only after you get all the responses you can start render the views according. Also there are situations when you're getting a lot of duplicated data in two requests and it's a waste of resources.
+
+But this does not have to be the case if you're using graphQL. Instead you only need to have one endpoint to serve all the requests and you can join the related requests relations into 1 response and make things easy.
 
 ### Queries and Mutations
 
-You can think of queries as HTTP GETs and mutations as HTTP POSTs, PUTs or DELETEs. 
+Query and mutation is the basic keyword for graphQL. You can think of queries as HTTP `GET`s and mutations as HTTP `POST`s, `PUT`s or `DELETE`s. It's just simple as that.
+
+### Properties
+
+- You need to specify schemas and types for your data.
+- You can use fragments to make your query look really efficient.
+
+![](https://i.stack.imgur.com/SR9EJ.png)
 
 ### Misc
 
