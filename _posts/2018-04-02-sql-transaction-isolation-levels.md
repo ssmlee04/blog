@@ -4,7 +4,6 @@ title: 😀 Sql isolation levels
 ---
 # {{ page.title }}
 
-
 ### A very good explaination of isolation levels
 
 For example, you have 3 concurrent process A, B and C. A starts a transaction, writes data and commit/rollback (depending on results). B just executes a SELECT statement to read data. C reads and updates data. All these process work on same table T.
