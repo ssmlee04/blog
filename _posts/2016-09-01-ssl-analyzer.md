@@ -4,7 +4,7 @@ title: SSL Analyzer
 ---
 # {{ page.title }}
 
-Apparently we have something like this we analyze the vulnerabilities on your website. 
+Apparently there are websites that checks your ssl vulnerabilities on your website.
 
 ![SSL analyzer](http://i.stack.imgur.com/PWkcI.png)
 
