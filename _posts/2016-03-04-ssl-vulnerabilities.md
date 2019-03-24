@@ -1,6 +1,6 @@
 ---
 layout: article
-title: SSL vulnerabilities
+title: 😳 SSL vulnerabilities
 ---
 # {{ page.title }}
 
@@ -8,7 +8,7 @@ SSLv3 has a vulnerability against POODLE attack. SSLv2 has a vulnerability again
 
 ![http://i.stack.imgur.com/1iyvC.png](http://i.stack.imgur.com/1iyvC.png)
 
-The best practice is to disable SSL v3 when starting an https server as follows: 
+The best practice is to disable SSL v3 when starting an HTTPS server. For node.js express server the config is as follows:
 
 ```
 https.createServer({
@@ -52,7 +52,7 @@ If we connect normally, it will just work:
 $ openssl s_client -connect localhost:443
 ```
 
-Anyways just make sure your server supports as little connection protocals as possible so that you don't need to worry about those things.
+Anyways just make sure your server supports as little connection protocals as possible so that you don't need to worry about those things later.
 
 --
 

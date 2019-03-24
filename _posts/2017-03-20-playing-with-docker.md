@@ -1,22 +1,26 @@
 ---
 layout: article
-title: Playing with Docker
+title: 😀 Playing with Docker
 ---
 # {{ page.title }}
 
 ### Abstract
 
-Docker is a container service where you can have a clean and unified running environment for your processes and thus prevent any side effects for running your application across different platforms. You can also configure the rules for the container to ensure higher security for your application. 
+Docker is a container service where you can have a clean and unified running environment for your applications.
 
 ![https://d3nmt5vlzunoa1.cloudfront.net/phpstorm/files/2015/10/large_v-trans.png](https://d3nmt5vlzunoa1.cloudfront.net/phpstorm/files/2015/10
 /large_v-trans.png)
 
+You can launch a service very easily in the same ways. Also you can make your standard docker images to run your application on a specific infrastructures. This eliminates the time to setup the environment so that we can stay focused on developing the application.
+
+Also each docker container is like a sandbox. You can use it to split the running environments so that applications won't talk to each other unless necessary. This ensures that we can have a higher security setting for our applications.
+
 ### docker-cli
 
-There are some docker commands that I use often. 
+There are some docker commands that I use often.
 
 * `docker build`
-* `docker run` 
+* `docker run`
 * `docker stop`
 * `docker rm`
 * `docker rmi`
@@ -29,28 +33,28 @@ There are some docker commands that I use often.
 
 ### Dockerfile
 
-There might be situations that you want to create docker images on your own. For example the following image helps you run mongodb and set the default username and password. 
+There might be situations that you want to create docker images on your own. For example the following image helps you run mongodb and set the default username and password.
 
 https://github.com/tutumcloud/mongodb
 
-There are some commands in the Dockerfile that I used often: 
+There are some commands in the Dockerfile that I used often:
 
 * `cmd`
 * `expose`
 
 ### Kitematic
 
-kitematic is has a eays-to-use gui interface for you to launch your docker containers in no time. Which is very impressive. 
+kitematic is has a eays-to-use gui interface for you to launch your docker containers in no time. Which is very impressive.
 
 ![https://docs.docker.com/kitematic/images/browse-images.png](https://docs.docker.com/kitematic/images/browse-images.png)
 
-### misc 
+### Misc
 
-This is a simple repo that I created for you to start 1 container of node.js process and 1 container of mongodb process and make the node.js container talk to the mongodb container. 
+This is a simple repo that I created for you to start 1 container of node.js process and 1 container of mongodb process and make the node.js container talk to the mongodb container.
 
 https://github.com/ssmlee04/vm-docker
 
-What it is doing is it will build two images based on the two dockerfiles and make one docker container talk to the other. All you need to do is install docker-compose and do 
+What it is doing is it will build two images based on the two dockerfiles and make one docker container talk to the other. All you need to do is install docker-compose and do
 
 ```bash
 $ docker-compose up

@@ -1,17 +1,17 @@
 ---
 layout: article
-title: Tags to environment variables on EC2
+title: 😀 Tags to environment variables on EC2
 ---
 # {{ page.title }}
 
-This seems like a correct way to get information into the instance
+This seems like a way to get information into the instance
 
 ```
 ######
 # Author: Marcello de Sales (marcello.desales@gmail.com)
 # Description: Create Create Environment Variables in EC2 Hosts from EC2 Host Tags
-# 
-### Requirements:  
+#
+### Requirements:
 # * Install jq library (sudo apt-get install -y jq)
 # * Install the EC2 Instance Metadata Query Tool (http://aws.amazon.com/code/1825)
 #
@@ -19,7 +19,7 @@ This seems like a correct way to get information into the instance
 # * Add the Policy EC2:DescribeTags to a User
 # * aws configure
 # * Souce it to the user's ~/.profile that has permissions
-#### 
+####
 # Add tags to an EC2 host or Image Profile
 # Reboot and verify the result of $(env).
 

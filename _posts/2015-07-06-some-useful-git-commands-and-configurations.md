@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Some useful git commands and configurations
+title: 😀 Some useful git commands and configurations
 ---
 ## {{ page.title }}
 
@@ -10,12 +10,12 @@ Git is a distributed version control system (DVCS) for many people to work toget
 
 ### Some basic configurations:
 
-Git supports colored terminal output: 
+Git supports colored terminal output:
 ```bash
 $ git config --global color.ui true
 ```
 
-You can configure your git to remember your credential for a period of time: 
+You can configure your git to remember your credential for a period of time:
 ```bash
 $ git config --global credential.helper "cache --timeout=3600"
 ```
@@ -25,7 +25,7 @@ You can list the files changed for a specific commit:
 $ git config --global alias.files '!f() { git diff --name-status $1^ $1; }; f'
 ```
 
-You can select / unselect the files in the working tree that cannot be updated even if there are changes: 
+You can select / unselect the files in the working tree that cannot be updated even if there are changes:
 ```bash
 $ git config --global alias.hide 'update-index --assume-unchanged'
 $ git config --global alias.unhide 'update-index --no-assume-unchanged'
@@ -38,7 +38,7 @@ $ git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(
 
 ![https://i.stack.imgur.com/xnRLj.png](https://i.stack.imgur.com/xnRLj.png)
 
-Global flags: you can use -g flag to change your setting globally. 
+Global flags: you can use -g flag to change your setting globally.
 ```bash
 $ git config user.name “Shih-Min Lee”
 $ git config -g user.email “ssmlee04@gmail.com”
@@ -59,8 +59,8 @@ $ git config --global alias.st status
 
 ### Mac-specific configs
 
-* on a mac. `.gitconfig` is locate at `$HOME/.gitconfig`. you should be able to find your git settings there. 
-* the default git on mac is something called Apple git, you might want to switch it to a real git. You can simply do 
+* on a mac. `.gitconfig` is locate at `$HOME/.gitconfig`. you should be able to find your git settings there.
+* the default git on mac is something called Apple git, you might want to switch it to a real git. You can simply do
 
 ```bash
 $ brew install git
@@ -72,9 +72,9 @@ but the current git is pointed to default apple git location. you need to add th
 export PATH="/usr/local/bin:$PATH"
 ```
 
-in `~/.bash_profile` to solve this issue. 
+in `~/.bash_profile` to solve this issue.
 
-Reason why you want to switch away from Apple git is because you might want to install something like `bash-completion`, which behaves just like git autocomplete in ubuntu when you press the Tab key. 
+Reason why you want to switch away from Apple git is because you might want to install something like `bash-completion`, which behaves just like git autocomplete in ubuntu when you press the Tab key.
 
 ```bash
 $ git --version
@@ -87,7 +87,7 @@ Once you update your git you should be able to install other useful packages.
 
 ### Some basic commands
 
-You can use this command to clone projects to your local machine. 
+You can use this command to clone projects to your local machine.
 ```bash
 $ git clone
 ```
@@ -107,7 +107,7 @@ you can create a branch `new-branch-name` with above methods. Also you can creat
 $ git branch
 ```
 
-list the branches that exists in the local repo. This list might not be in sync with your remote repo and if you want to list the remote branches you might want to do one of the following: 
+list the branches that exists in the local repo. This list might not be in sync with your remote repo and if you want to list the remote branches you might want to do one of the following:
 
 ```bash
 $ git ls-remote --heads
@@ -125,7 +125,7 @@ config.js
 {
   mongo: {
     user: process.ENV.MONGO_USER,
-    pass: process.ENV.MONGO_PASS 
+    pass: process.ENV.MONGO_PASS
   }
 }
 ```
@@ -145,7 +145,7 @@ $ git push --force origin master
 
 ### Misc
 
-* If the folder is empty, it will not be added into project. But you might want to do something like this to add a empty folder: 
+* If the folder is empty, it will not be added into project. But you might want to do something like this to add a empty folder:
 
 * [How can I add an empty directory to a Git repository?](http://stackoverflow.com/a/932982/1355175)
 

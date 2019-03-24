@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Continuous integration with CircleCI
+title: 😀 Continuous integration with CircleCI
 ---
 ## {{ page.title }}
 
 #### Continuous integration and continuous delivery
 
-Developers might be pushing their code to the repo all the time. So it's very important to make sure the codes are free of bugs when they're being pushed to the repo.  Continuous Integration (CI) is to help you run some tests and locate the problems early in the code.  Continuous delivery (CD) will send a build signal to your machine and tell it to re-build the app on your request, giving you the minimum downtime between your deployments. 
+Developers might be pushing their code to the repo all the time. So it's very important to make sure the codes are free of bugs when they're being pushed to the repo.  Continuous Integration (CI) is to help you run some tests and locate the problems early in the code.  Continuous delivery (CD) will send a build signal to your machine and tell it to re-build the app on your request, giving you the minimum downtime between your deployments.
 
 #### Parallelism
 
@@ -25,7 +25,7 @@ You can also set environment variables for CircleCI testing.
 
 ![](http://i.stack.imgur.com/QNjVW.jpg)
 
-You need to tell CircleCI which S3 bucket to push revisions to.  And give it the correct permissions. 
+You need to tell CircleCI which S3 bucket to push revisions to.  And give it the correct permissions.
 
 ![](http://i.stack.imgur.com/B1AF8.jpg)
 
@@ -42,9 +42,9 @@ Also you need to create a CodeDeploy application and selected the corresponding 
 * appspec.yml has a special format (spacing), if the format of appspec.yml is not correct you will see errors for your deployment
 * `key_pattern` is the relative path of your files (revision) in your S3 bucket. Make sure you enter the same `key_pattern` in both AWS and circle.yml
 * need to watch out for the relative paths in appspec.yml
-* permission issues: 
+* permission issues:
 
-if your scripes have insufficient permissions then EC2 will fail to execute the scripts.  you need to make sure those scripts have 755 permissions when copied to your instance. 
+if your scripes have insufficient permissions then EC2 will fail to execute the scripts.  you need to make sure those scripts have 755 permissions when copied to your instance.
 
 [http://stackoverflow.com/questions/9027584/how-to-change-the-file-mode-on-github](http://stackoverflow.com/questions/9027584/how-to-change-the-file-mode-on-github)
 * bash scripts cannot run correctly
@@ -132,9 +132,9 @@ NODE_ENV=stage nodejs server.js
 
 #### debugging EC2 instances
 
-once CodeDeploy copies the revision files to the EC2 instance the rest of the work is done by processing `appspec.yml` file, when any errors occur in CodeDeploy it will output error messages in 
+once CodeDeploy copies the revision files to the EC2 instance the rest of the work is done by processing `appspec.yml` file, when any errors occur in CodeDeploy it will output error messages in
 
-`/var/log/aws/CodeDeploy-agent/CodeDeploy-agent.log` 
+`/var/log/aws/CodeDeploy-agent/CodeDeploy-agent.log`
 
 there are additional logs at the following place, and you can see your revision files in this folder
 
@@ -144,7 +144,7 @@ there are additional logs at the following place, and you can see your revision 
 $ aws deploy get-deployment-instance --deployment-id d-I4N1GYCKF --instance-id i-1edac6c6
 ```
 
-Also you can use aws cli to view the error logs. 
+Also you can use aws cli to view the error logs.
 
 Most of the time this issue occur due to insufficient IAM Permission on the Instance and CodeDeploy Service. You need to check `/var/log/aws/codedeploy-agent/codedeploy-agent.log` file for detail information. Also in `/etc/codedeploy-agent/conf/codedeployagent.yml` file you can set `:verbose: true` to get more info in log file.
 

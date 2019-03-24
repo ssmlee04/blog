@@ -1,14 +1,14 @@
 ---
 layout: article
-title: Some notes on Twelve-Factor App
+title: 😱 Some notes on Twelve-Factor App
 ---
 # {{ page.title }}
 
-A methodology for building modern, scalable, maintainable software-as-a-service apps. 
+A methodology for building modern, scalable, maintainable software-as-a-service apps.
 
 ### 1. Codebase
 
-There is only 1 codebase. 
+There is only 1 codebase.
 
 ### 2. Dependencies
 
@@ -16,7 +16,7 @@ All the dependencies should be fully-decoupled.
 
 ### 3. Configs
 
-you can store configs in environment variables. Environment variables are never grouped together as “environments”, but instead are independently managed for each deploy. This way you won't see env variables like `job_staging_123` which is not scalable and is difficult to manage when the app gets large. 
+you can store configs in environment variables. Environment variables are never grouped together as “environments”, but instead are independently managed for each deploy. This way you won't see env variables like `job_staging_123` which is not scalable and is difficult to manage when the app gets large.
 
 ### 4. Backing services
 

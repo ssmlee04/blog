@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Some common things I do with Bluebird promises
+title: 😀 bluebird.js
 ---
 ## {{ page.title }}
 
 ### Callbacks
 
-Originally people do async stuff using callbacks, which means that you call a function and the function might not return anything to you before the script moves on to other function calls.  For example db read/writes or file io are very slow.  In this case we can send in a `callback function` as params and this function can interact with the results generated later (maybe a few `ms` later) in time.  
+In Node.js you can do async stuff using callbacks. A callback is a function inside a function call. For example db read/writes or file io are very slow.  In this case we can send a `callback function` as parameters to a function and the CPU can go do something else while we're waiting for the result of the function to comeback before going to the next functions.
 
 ```js
 fs.readFile('A.txt', function(err, d1){ // ... 1
@@ -27,13 +27,15 @@ fs.readFile('A.txt', function(err, d1){ // ... 1
 })
 ```
 
-The idea is to read A.txt, then use information from A.txt to read B.txt, and then C.xls and finally do something. 
+The idea is to read `A.txt`, then use the stuff inside `A.txt` to read `B.txt`, and then `C.xls` before we finally does something else.
 
-this looks really messy after a while.  Also the error handing here is minimal.  You know where the error occurs and you can decide what to do with errors.  But if you want to do something more complicated like
+As you can see this nesting function calls look really messy after a while.  Also the error handing here is minimal. You know where the error occurs and you can decide what to do with errors. But it's just hard and messy.
+
+Besides if you want to do something more complicated like this you wouldn't even know how to start:
 
 if `err3` then redo `2`, if `err2` redo `1`, if `err3` ten times than do something else.
 
-It would not be easy. So we do this with promises.
+That when we switch to promises.
 
 ### Promises
 
@@ -100,17 +102,17 @@ A
 .then(B)
 .then(C)
 .catch(D);
-``` 
+```
 
-or 
+or
 
 ```
 ABCD()
 ```
 
-This is a sudo code. you need to sort out the technicalities by your self.
+This is a pseudo code. you need to sort out the technicalities by your self.
 
-### Common functions in Bluebird.js that I use
+### Common functions that I use
 
 * `bind()`
 
@@ -171,10 +173,12 @@ maybe some people find this useful I don't know.
 
 ### Miscellaneous
 
-* I think `Promise.map` method can have maximum concurrency of 5. If there are more than 5 promises that is being executed but not yet resolved or rejected the `.map` method would be jammed. So many times I just set 
+* I think `Promise.map` method can have maximum concurrency of 5. If there are more than 5 promises running at the same time it won't work. So a lot of times I just set
 
 ```
-{concurrency: 1}
+{
+  concurrency: 1
+}
 ```
 
 when I am using `Promise.map` method.

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Some useful Google Chrome commands
+title: 😀 Some useful Google Chrome commands
 ---
 # {{ page.title }}
 

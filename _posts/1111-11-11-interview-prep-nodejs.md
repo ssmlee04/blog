@@ -9,10 +9,12 @@ interview: true
 
 Why is garbage collection expensive? The V8 JavaScript engine employs a stop-the-world garbage collector mechanism. In practice, it means that the program stops execution while garbage collection is in progress.
 
+[](https://blog.risingstack.com/node-js-at-scale-node-js-garbage-collection/)
+[](https://blog.risingstack.com/finding-a-memory-leak-in-node-js/)
+
 ### What is an event loop
 
-The event loop is provided by the libuv library. 
-
+The event loop is provided by the libuv library.
 
 ### What is the Call Stack and is it part of V8?
 

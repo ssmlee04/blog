@@ -1,6 +1,6 @@
 ---
 layout: article
-title: mongodb management and diagnosis
+title: 😀 mongodb management and diagnosis
 ---
 ## {{ page.title }}
 
@@ -10,11 +10,11 @@ mongodb is a thriving nosql database service is the recent years. It gives you r
 
 ### Mongodb users
 
-You need to create users with the correct permissions to be able to manage your db. When you startup the mongodb server the default behavior is that it accepts connections from anyone in the world.  So whoever have access to your machine will be able to read / write your database.  This is ok on a local development environment but if you're deploying on a production server you need to make sure you start mongodb with 
+You need to create users with the correct permissions to be able to manage your db. When you startup the mongodb server the default behavior is that it accepts connections from anyone in the world.  So whoever have access to your machine will be able to read / write your database.  This is ok on a local development environment but if you're deploying on a production server you need to make sure you start mongodb with
 
-`--auth` 
+`--auth`
 
-option and stops being stupid. 
+option and stops being stupid.
 
 ### Basic usages
 
@@ -46,7 +46,7 @@ db.createUser(
 
 there are some built-in roles such as `root`, `readWrite`, `read`, `dbAdmin`, `dbOwner`, `userAdmin`, `clusterAdmin`, `clusterManager`, `clusterMonitor`, `backup`, `restore`, `readAnyDatabase`, `readWriteAnyDatabase`, `userAdminAnyDatabase`.
 
-But also you would want to create users in your other collections, just do: 
+But also you would want to create users in your other collections, just do:
 
 
 ```bash
@@ -60,7 +60,7 @@ db.createUser(
 )
 ```
 
-So that user1 would have access to xxxx table. 
+So that user1 would have access to xxxx table.
 
 ### Miscellaneous
 

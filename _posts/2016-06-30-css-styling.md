@@ -1,22 +1,26 @@
 ---
 layout: article
-title: CSS styling with Bootstrap (web) and Flexbox (mobile)
+title: 😀 CSS with Bootstrap and Flexbox
 ---
 # {{ page.title }}
 
-There are some techniques that I use often to arrange the layouts on a website or mobile devices. I'll list of few of them below. 
+## CSS
 
-## Bootstrap
+CSS is a standard technology to tell the browser how the web components should be displayed on the screen. But mobile webs or native apps the idea is also very similar. And it turns out there are lots of useful libraries that could help you arrange the layouts on a website or the mobile devices. I'll list of few of them below.
+
+## Bootstrap.js
 
 ### Grid system
 
-A screen is divided into 12 parts horizontally.  You can use these classes to control the row and column layouts.
+A screen is divided into 12 parts horizontally.  You can use those classes to control the row and column layouts.
 
-Also it used CSS3 tricks to detect your viewport size and check whether it is a mobile device, an iPad or a normal screen. You can use different classes to control layouts in different viewports. 
+Also it used CSS3 tricks to detect your viewport size and check whether it is a mobile device, an iPad or a normal screen. You can use different classes to control layouts in different viewports.
+
+![](https://i.stack.imgur.com/zmmDE.png)
 
 ### Tables
 
-There are some useful properties in a table class. All you need to do is give your table `.table` class name. 
+There are some useful properties in a table class. All you need to do is give your table `.table` class name.
 
 `.table-striped` is for alternating rows.
 
@@ -28,7 +32,7 @@ There are some useful properties in a table class. All you need to do is give yo
 
 `.readonly` class will make the input field read-only
 
-You can wrap the input fields inside a form with div elements with `.form-control` class. 
+You can wrap the input fields inside a form with div elements with `.form-control` class.
 
 ### Buttons
 
@@ -38,10 +42,11 @@ You can wrap the input fields inside a form with div elements with `.form-contro
 
 ![button colors](http://i.stack.imgur.com/xPI5t.png)
 
-
 ## Flexbox (in React Native apps)
 
-flexbox aims to provide a more flexible way to design your layout. It can move around objects within a container easily. A flex container expands items to fill available free space, or shrinks them to prevent overflow.
+flexbox aims to provide a more flexible way to design your layout.
+
+It can move around objects within a container easily. A flex container can expand items to fill available free spaces, or shrink the items to prevent an overflow.
 
 ```
 .container {
@@ -49,12 +54,12 @@ flexbox aims to provide a more flexible way to design your layout. It can move a
 }
 ```
 
-All you need to do is grant `.container` property to a View.
+All you need to do is grant `.container` property to a `View`.
 
 When we use flexbox, we can arrange the children of a container in two directions, vertically or horizontally.
 
 ![](http://moduscreate.com/wp-content/uploads/2015/07/02-flex-direction.jpg)
- 
+
 `flexDirection:'row'` you can give this styling to a View so children elements can align in the direction you want
 
 ![](https://css-tricks.com/wp-content/uploads/2014/05/flex-direction1.svg)
@@ -71,10 +76,9 @@ When we use flexbox, we can arrange the children of a container in two direction
 
 ![](https://css-tricks.com/wp-content/uploads/2013/04/justify-content.svg)
 
-## Miscellaneous
+### Miscellaneous
 
-Bootstrap is very big. Even the minified version has over 100 kb in size. 
-
+Bootstrap is very big. Even the minified version has over 100 kb in size.
 
 --
 

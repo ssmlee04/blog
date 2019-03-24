@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Redis intro
+title: 😀 Redis intro
 ---
 ## {{ page.title }}
 

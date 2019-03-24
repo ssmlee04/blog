@@ -24,6 +24,18 @@ An output looks like this:
 
 ![](https://i.stack.imgur.com/5qJOl.png)
 
+You can also use it to benchmark a post request like the following:
+
+ab -k -p post.txt -T application/json -H 'Authorization: Token abcd1234' -c 1000 -n 20000 http://127.0.0.1:3000/apis/v1/messages
+
+`-H` specifies the request header
+
+post.txt is like this:
+
+```json
+{"userId":"59dc2bf534b4eba2207a1145", "targetId":"59dd5d870d28f0e62c015bb6", "image":"hey" }
+```
+
 --
 
 references:

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Some useful queue modules in node.js
+title: 😀 Some useful queue modules in node.js
 ---
 # {{ page.title }}
 
@@ -8,7 +8,7 @@ title: Some useful queue modules in node.js
 
 [https://github.com/azproduction/promise-queue](https://github.com/azproduction/promise-queue)
 
-Basic usage: 
+Basic usage:
 
 ```
 var maxConcurrent = 1;
@@ -29,7 +29,7 @@ app.get('/version/:user/:repo', function (req, res, next) {
 });
 ```
 
-### kue 
+### kue
 
 [https://github.com/Automattic/kue](https://github.com/Automattic/kue)
 

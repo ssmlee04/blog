@@ -1,26 +1,15 @@
 ---
 layout: article
-title: Setting up mail servers
+title: 😀 Setting up mail server using docker
 ---
 # {{ page.title }}
 
+[https://github.com/tomav/docker-mailserver](https://github.com/tomav/docker-mailserver)
+
+So basically this works.
 
 --
 
 references:
 
-* [helloworld](helloworld)
-
 {{ page.date | date_to_string }}
-
-<style>
-red {
-    color: red;
-}
-green {
-    color: green;
-}
-orange {
-    color: orange;
-}
-</style>

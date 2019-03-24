@@ -1,10 +1,10 @@
 ---
 layout: article
-title: Tiny bash script to kill a process by name
+title: 😀 Tiny bash script to kill a process by name
 ---
 # {{ page.title }}
 
-store the following code to `killProc.sh` 
+store the following code to `killProc.sh`
 
 ```bash
 #!/bin/sh

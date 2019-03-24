@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Jira basics
+title: 😳 Jira basics
 ---
 # {{ page.title }}
 
 ## Abstract
 
-Jira is a good project management tool. Very neat. You can create epics or stories or issues and send the tickets back and forth teammembers very easily.
+Jira is a good project management tool. Very neat. You can create epics or stories or issues and send the tickets back and forth between team members very easily.
 
 
 --

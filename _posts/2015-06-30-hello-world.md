@@ -12,8 +12,4 @@ First article post `yay!..`
 
 references:
 
-* [ohoor](https://ohoor.com)
-* [singlebeep](https://singlebeep.com)
-* [foundeal](https://foundeal.com)
-
 {{ page.date | date_to_string }}

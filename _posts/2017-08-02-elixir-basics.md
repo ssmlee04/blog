@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Elixir basics
+title: 😀 Elixir basics
 ---
 # {{ page.title }}
 
@@ -52,7 +52,7 @@ number < atom < reference < function < port < pid < tuple < map < list < bitstri
 
 Doctests:
 
-You can write tests directly from the documentation.
+You can write tests directly from the documentation. Yay~
 
 ### GenServers:
 

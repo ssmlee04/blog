@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Some useful Sublime Text configurations and usages
+title: 😀 Some useful Sublime Text configurations and usages
 ---
 ## {{ page.title }}
 
@@ -8,11 +8,11 @@ title: Some useful Sublime Text configurations and usages
 
 First thing you have to do is to install the package controll manager. You can basically follow the instructions on this website [https://packagecontrol.io/installation](https://packagecontrol.io/installation) and have it installed on your Sublime Text.
 
-After you install the package manager you can press 
+After you install the package manager you can press
 
-`ctrl + shift + p` 
+`ctrl + shift + p`
 
-or on a Mac it is 
+or on a Mac it is
 
 `⌘ + shift + p`
 
@@ -20,18 +20,18 @@ to use the package controll manager to install, enable or disable packages that 
 
 #### Packages that are useful to almost everyone
 
-* Babel 
+* Babel
 
 This helps you style es6 and JSX codes correctly
 
-* SublimeLinter 
-* SublimeLinter-contrib-eslint 
+* SublimeLinter
+* SublimeLinter-contrib-eslint
 
 you need to `npm install -g eslint` first to make this work
 
 ![](https://s3.amazonaws.com/clearstreet/misc/878affF512AAbCC712.png)
 
-The sublime linters will point out what functions or variables are not used correctly. It highlights the syntax errors or unused variables and stuff in your files so that you can easily see. I think it looks for `package.json` in the folder and once it found the found it will look for `.eslintrc` in the same folder and apply the linting rules to all the subfolders. 
+The sublime linters will point out what functions or variables are not used correctly. It highlights the syntax errors or unused variables and stuff in your files so that you can easily see. I think it looks for `package.json` in the folder and once it found the found it will look for `.eslintrc` in the same folder and apply the linting rules to all the subfolders.
 
 * SublimeREPL
 
@@ -68,7 +68,7 @@ and later when you type `co` and press `tab` it will have a console.log for you.
 </snippet>
 ```
 
-Or maybe this `jsonp` snippet. I use this surprisingly often. 
+Or maybe this `jsonp` snippet. I use this surprisingly often.
 
 --
 

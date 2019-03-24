@@ -10,19 +10,19 @@ interview: true
 
 `this` evaluates to the value of the current execution context.
 
-### What is `bind` in Javascript 
+### What is `bind` in Javascript
 
 You use `bind` function to preserve the context.
 
-### What is `apply` in Javascript 
+### What is `apply` in Javascript
 
 You use `apply` function to preserve the context.
 
 ### Difference between ES5, ES6
 
-ES6 has some new features or syntaxs that are good for performances or code reability. ES6 also supports classes and it's more intuitive work on in some cases. All the browsers support ES5 syntaxes but with ES6 you would need to transpile your code so that your browser is able to read it. 
+ES6 has some new features or syntaxs that are good for performances or code reability. ES6 also supports classes and it's more intuitive work on in some cases. All the browsers support ES5 syntaxes but with ES6 you would need to transpile your code so that your browser is able to read it.
 
-pros: 
+pros:
 - arrow function
 - classes
 - generators
@@ -30,13 +30,13 @@ pros:
 - spread operator
 - `let` and `const`
 
-cons: 
+cons:
 - polyfills are slow
 - lack of browser support
 
 ### What is ES6 block scoping
 
-Declaring a variable with `var` could cause confusion sometimes. It's easy for developers to unintentionally create bugs or pollute the global namespace when doing variable declarations with hoisting. Instead in ES6 a `let` statement is created and provides a block scoping mechanism to declare local variables without causing issues. 
+Declaring a variable with `var` could cause confusion sometimes. It's easy for developers to unintentionally create bugs or pollute the global namespace when doing variable declarations with hoisting. Instead in ES6 a `let` statement is created and provides a block scoping mechanism to declare local variables without causing issues.
 
 ### What is strict mode or "use strict"
 
@@ -56,7 +56,7 @@ The simplest way to create a cookie is to assign a string value to the `document
 
 ### Explain event delegation
 
-Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future. 
+Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.
 
 ### Explain how prototypal inheritance works
 
@@ -86,7 +86,7 @@ RequireJS implements AMD, which is designed to suit the browser environment
 
 AMD is more suited for the browser, because it supports asynchronous loading of module dependencies.
 
-CommonJS, is a standard, mostly used in servers and it loads modules synchronously. 
+CommonJS, is a standard, mostly used in servers and it loads modules synchronously.
 
 ### What is a native object
 
@@ -98,7 +98,7 @@ document.write() shouldn’t be used after the page has loaded to change the con
 
 ### What is AJAX?
 
-Simply put, AJAX is the use of JavaScript to send and receive using HTTP without reloading the page. 
+Simply put, AJAX is the use of JavaScript to send and receive using HTTP without reloading the page.
 
 - A user interaction in the browser triggers the event, such as a button click
 - The AJAX call fires. This creates and AJAX request, browsers use the XMLHttpRequest object. When the server responds to the browser’s request, the same XMLHttpRequest object will process the result.
@@ -108,11 +108,11 @@ Simply put, AJAX is the use of JavaScript to send and receive using HTTP without
 
 ### What is JSONP all about?
 
-It's a way of dealing with cross-site requests. Normally you cannot run a script from domains other than the domain from which the resources were served. And with JSONP you can pass a function as the parameter so that the script can execute the function you want it to execute even if it's cross-domain. 
+It's a way of dealing with cross-site requests. Normally you cannot run a script from domains other than the domain from which the resources were served. And with JSONP you can pass a function as the parameter so that the script can execute the function you want it to execute even if it's cross-domain.
 
 ### What is a Promise
- 
-A promise is an object that may produce a result some time in the future. The result could be resolved or either rejected. 
+
+A promise is an object that may produce a result some time in the future. The result could be resolved or either rejected.
 
 ### What is hoisting
 
@@ -142,7 +142,7 @@ The Event Loop is a queue that stores a list of functions and the callback funct
 
 ### What is a blocking code?
 
-We say a code is blocking if the application needs to complete executing the code before moving on to the next code black.  
+We say a code is blocking if the application needs to complete executing the code before moving on to the next code black.
 
 ### What is event-driven programming
 
@@ -205,7 +205,7 @@ null == undefined   // true
 TLS handshake it will send packets over the channel
 
 
-### How does the following code work? 
+### How does the following code work?
 
 
 

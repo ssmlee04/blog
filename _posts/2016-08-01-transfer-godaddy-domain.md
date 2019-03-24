@@ -1,12 +1,12 @@
 ---
 layout: article
-title: Transfer a Godaddy domain name
+title: 😀 Transfer a Godaddy domain name
 ---
 # {{ page.title }}
 
-### Transfer a domain name 
+### Transfer a domain name
 
-It appears that you can transfer your domain name to another Godaddy account for free. 
+It appears that you can transfer your domain name to another Godaddy account for free.
 
 ![transfer a domain out](http://i.stack.imgur.com/rsCEg.png)
 

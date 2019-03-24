@@ -35,14 +35,14 @@ Function overloading is defined as a normal function, but it has the ability to 
 
 An abstract class is a class which cannot be instantiated. Creation of an object is not possible with abstract class , but it can be inherited. An abstract class can contain only Abstract method. Java allows only abstract method in abstract class while for other language it allows non-abstract method as well.
 
-An example is this 
+An example is this
 
 ```java
 public abstract Animal
 {
    public void eat(Food food)
    {
-        // do something with food.... 
+        // do something with food....
    }
 
    public void sleep(int hours)
@@ -52,7 +52,7 @@ public abstract Animal
         // 1000 milliseconds * 60 seconds * 60 minutes * hours
         Thread.sleep ( 1000 * 60 * 60 * hours);
     }
-    catch (InterruptedException ie) { /* ignore */ } 
+    catch (InterruptedException ie) { /* ignore */ }
    }
 
    public abstract void makeNoise();
@@ -83,7 +83,7 @@ Method overriding is a feature that allows sub class to provide implementation o
 
 ### What is ‘this’ pointer?
 
-THIS pointer refers to the current object of a class. 
+THIS pointer refers to the current object of a class.
 
 ### What is a Java superclass
 
@@ -91,7 +91,7 @@ A Java superclass is a class which gives a method or methods to a Java subclass.
 
 ### What is Class Abstraction.
 
-Abstraction is a good feature of OOPS , and it shows only the necessary details to the client of an object. 
+Abstraction is a good feature of OOPS , and it shows only the necessary details to the client of an object.
 
 ### What is Class Encapsulation.
 

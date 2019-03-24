@@ -8,7 +8,7 @@ interview: true
 
 ### If you have 5 different stylesheets, how would you best integrate them into the site?
 
-Try to see if the css stylesheets are modulized or is applicable in a global context. If possible I only use css libraries that everyone knows like bootstrap or materialize. 
+Try to see if the css stylesheets are modulized or is applicable in a global context. If possible I only use css libraries that everyone knows like bootstrap or materialize.
 
 ### How many resources will a browser download from a given domain at a time?
 
@@ -36,7 +36,7 @@ Use lang (or xml:lang for XHTML) in tags. Also metadata and Content-Language HTT
 
 ### What is HTML5
 
-HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages. 
+HTML5 is the latest version of Hypertext Markup Language, the code that describes web pages.
 
 ### Describe the difference between a cookie, sessionStorage and localStorage.
 
@@ -45,7 +45,7 @@ HTML5 is the latest version of Hypertext Markup Language, the code that describe
 
 ### Describe the difference between `<script>`, `<script async>` and `<script defer>`
 
-defer: 
+defer:
 
 - Make par­al­lel requests to fetch the indi­vid­ual files.
 - Con­tinue pars­ing the doc­u­ment as if it was never interrupted.

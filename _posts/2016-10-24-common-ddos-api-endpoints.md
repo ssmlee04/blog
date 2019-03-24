@@ -1,16 +1,16 @@
 ---
 layout: article
-title: Some common API enpoints hackers use to probe your system
+title: 😀 Some routes people use to probe your system
 ---
 # {{ page.title }}
 
-I am very surprised to see people probing my server at those API endpoints. Luckily they didn't work. 
+I am very surprised to see people probing my server at those API endpoints. Luckily they didn't succeed.
 
 ![](https://i.stack.imgur.com/gxy6A.png)
 ![](https://i.stack.imgur.com/zq28I.png)
 ![](https://i.stack.imgur.com/gEIAO.png)
 
-Maybe it's just my design is so bad that doesn't follow common practices that they couldn't even locate one correct endpoint to attack? Haha
+Or maybe it's just my project architecture is so bad that they couldn't even locate the usual suspects to attack? Hopefully this is not the case. Lol
 
 --
 

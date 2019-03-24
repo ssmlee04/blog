@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Javascript getter and setter
+title: 😶 Javascript getter and setter
 ---
 # {{ page.title }}
 

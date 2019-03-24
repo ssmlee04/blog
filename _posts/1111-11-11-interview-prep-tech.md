@@ -14,11 +14,11 @@ The size of the stack is set when a thread is created. The size of the heap is s
 
 ### What is MX record
 
-MX record is a type of resource record in the Domain Name System that specifies the mail server responsible for receiving emails. How it works is when an E-mail is sent through the Internet, the sending mail transfer agent queries the domain for it's MX for a list of mail servers able to handle the emailing sending before establishing an SMTP connection. 
+MX record is a type of resource record in the Domain Name System that specifies the mail server responsible for receiving emails. How it works is when an E-mail is sent through the Internet, the sending mail transfer agent queries the domain for it's MX for a list of mail servers able to handle the emailing sending before establishing an SMTP connection.
 
 ### What tools do you use to generate API documentations
 
-We tried apidoc.js before and later we switched RAML and osprey for API specification. The good thing about RAML is you're forced to define your API specification before you're able to develop and use the API endpoints. You can also make RAML work on type checking and error handling for you. Since the schema is clearly defined you can use some other tools to generate the api docs very easily. 
+We tried apidoc.js before and later we switched RAML and osprey for API specification. The good thing about RAML is you're forced to define your API specification before you're able to develop and use the API endpoints. You can also make RAML work on type checking and error handling for you. Since the schema is clearly defined you can use some other tools to generate the api docs very easily.
 
 ### What is Object-relational mapping
 
@@ -26,11 +26,11 @@ Object Relational Mapping (ORM) refers to the mapping of persisted data, traditi
 
 ### Why say that HTTP is a stateless protocol?
 
-HTTP is a stateless protocol, in other word the server will forget everything related to client/browser state. 
+HTTP is a stateless protocol, in other word the server will forget everything related to client/browser state.
 
-### What is REST 
+### What is REST
 
-REST (REpresentational State Transfer) is an architectural style, and an approach to communications that is often used in the development of Web services. 
+REST (REpresentational State Transfer) is an architectural style, and an approach to communications that is often used in the development of Web services.
 
 The REST style emphasizes that interactions between clients and services is enhanced by having a limited number of operations (verbs).
 
@@ -54,13 +54,13 @@ If a request may have implications on user data, a simple request is insufficien
 
 ### How can you listen on port 80 with Node?
 
-You should not unless you're dealing with maybe Docker applications. 
+You should not unless you're dealing with maybe Docker applications.
 
 Still, if you want to have your Node.js application listen on port 80, here is what you can do. Run the application on any port above 1024, then put a reverse proxy like nginx in front of it. Also if you still want to use it at port 80 directly you would have to run the process with a root permission.
 
 ### How can JS Engine know if it is an async function so that it can put it in the Event Loop?
 
-There is a fixed set of functions in node.js that are are known to be async  because they have to call the OS or C++. 
+There is a fixed set of functions in node.js that are are known to be async  because they have to call the OS or C++.
 
 ### The time required to run this code in Google Chrome is considerably more than the time required to run it in Node.js. Explain why this is so, even though both use the v8 JavaScript Engine.
 
@@ -68,9 +68,9 @@ Because when you declare a variable outside of a function scope the variable wou
 
 ### What is the difference between a process and a thread?
 
-A process is an independent entity in which system resources like CPU time or memory are allocated. Each process is executed in a separate address space, and one process cannot access the variables in another process. 
+A process is an independent entity in which system resources like CPU time or memory are allocated. Each process is executed in a separate address space, and one process cannot access the variables in another process.
 
-A thread exists within a process and shares the process' resource. A process can have multiple threads running the tasks at the same time. And the threads would have access to the process' variables. 
+A thread exists within a process and shares the process' resource. A process can have multiple threads running the tasks at the same time. And the threads would have access to the process' variables.
 
 ### How does Node.js handle child threads?
 
@@ -81,21 +81,21 @@ console.timeEnd("loop");
 
 ### What is Programming paradigms
 
-Programming paradigm is a way to classify programming languages based on the features of the language. 
+Programming paradigm is a way to classify programming languages based on the features of the language.
 
 ### What is functional programming
 
-functional programming is a programming paradigm that treats computation as the evaluation of a function and avoids changing-state and mutable-data. Which is saying that the output of a function is always the same for the same given inputs and therefore it's easier to predict the output and prevent the side effects when you're doing functional programming. 
+functional programming is a programming paradigm that treats computation as the evaluation of a function and avoids changing-state and mutable-data. Which is saying that the output of a function is always the same for the same given inputs and therefore it's easier to predict the output and prevent the side effects when you're doing functional programming.
 
 ### What is a side effect
 
-A function or expression is said to have a side effect if it modifies the state outside its scope. 
+A function or expression is said to have a side effect if it modifies the state outside its scope.
 
-### What is meant by first class object: 
+### What is meant by first class object:
 
 In computer science, a programming language is said to support first-class functions (or function literal) if it treats functions as first-class objects. Specifically, this means that the language supports constructing new functions during the execution of a program, storing them in data structures, passing them as arguments to other functions, and returning them as the values of other functions.
 
-### What is a monad  
+### What is a monad
 
 Monad is a design pattern used to describe computations as a series of functions.
 
@@ -111,16 +111,16 @@ It may perform slower than a constructor function in micro-optimization benchmar
 
 ### Pros and cons of Javascript
 
-pros: 
+pros:
 You can pass functions as arguments into other functions as callbacks
-It’s async, non-blocking. It has npm. It has a thriving community and a lot of support and use cases on Stackoverflow.com. 
+It’s async, non-blocking. It has npm. It has a thriving community and a lot of support and use cases on Stackoverflow.com.
 
-cons: 
+cons:
 It does not support decimals: 0.1 + 0.2 = 0.3. It does not have strict typing. Array is not always like what it seems. It's coding syntax is too relaxed sometimes, so you'd likely to bump into pitfalls sometimes.
- 
+
 ### JavaScript follows which Programming Paradigm?
 
-It is a mixture of object oriented programming and functional programing. 
+It is a mixture of object oriented programming and functional programing.
 
 ### What are the pros and cons of monolithic vs microservice architectures?
 monolithic
@@ -179,7 +179,7 @@ After the symmetrical encryption is established to secure communications between
 
 ### What is the difference between authentication and authorization
 
-Authentication is the process of verifying who you are. Authorization is the process of verifying that you have access to something. 
+Authentication is the process of verifying who you are. Authorization is the process of verifying that you have access to something.
 
 ### What UI, Security, Performance, SEO, Maintainability or Technology considerations do you make while building a web application or site?
 
@@ -192,7 +192,7 @@ I prefer to work on a mac, use gmail to send and receive emails. I code using Su
 
 ### Which version control systems are you familiar with?
 
-git 
+git
 
 ### Explain OAuth to me
 
