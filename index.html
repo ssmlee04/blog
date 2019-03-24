@@ -45,7 +45,7 @@ title: My Blog
       　　　　<li>{% if post.interview == null %}
                 {{ post.date | date_to_string }}
               {% endif %}
-              <a href="{{ post.url }}">
+              <a href="{{ site.baseurl }}{{ post.url }}">
                 {% if post.interview != null %}
                   Interview prep:
                 {% endif %}
@@ -53,7 +53,7 @@ title: My Blog
               </a>
               {% if post.image %}
               <br />
-              <a href="{{ post.url }}">
+              <a href="{{ site.baseurl }}{{ post.url }}">
                 <img src="{{ post.image }}" />
               </a>
               {% endif %}
